@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Merchant Parameters-->
+    <string name="pref_merch_id" translatable="false">merchant_id</string>
+    <string name="pref_terminal_id" translatable="false">terminal_id</string>
+    <string name="pref_merch_cn" translatable="false">merchant_cn_name</string>
+    <string name="pref_merch_en" translatable="false">merchant_en_name</string>
+    <string name="pref_addr1_en" translatable="false">addr1_en</string>
+    <string name="pref_addr2_en" translatable="false">addr2_en</string>
+    <string name="pref_show_admin_fee" translatable="false">show_admin_fee</string>
+
+    <string name="pref_terminal_time_date" translatable="false">key_terminal_date_time</string>
+    <string name="pref_acquirer" translatable="false">key_acquirer</string>
+    <string name="pref_mcc" translatable="false">merchant_mcc</string>
+
+    <string name="pref_bpjs_location_data" translatable="false">download_bpjs_tk_location_data</string>
+    <string name="pref_bpjs_branch_office_data" translatable="false">download_bpjs_tk_branch_office_data</string>
+    <string name="pref_bpjs_district_data" translatable="false">download_bpjs_tk_district_data</string>
+    <string name="pref_bpjs_province_data" translatable="false">download_bpjs_tk_province</string>
+    <string name="pref_bpjs_payment_inquiry_data" translatable="false">pref_bpjs_payment_inquiry_data</string>
+    <string name="pref_bpjs_inquiry_counter_form" translatable="false">pref_bpjs_inquiry_counter_form</string>
+    <string name="pref_bpjs_payment_request_data" translatable="false">payment_request_data</string>
+    <string name="pref_bpjs_register_request_data" translatable="false">payment_register_data</string>
+
+
+
+    <!--Transaction management prefs-->
+    <string name="pref_home_trans" translatable="false">home_trans</string>
+    <string name="pref_sale_void_pwd" translatable="false">sale_void_pwd</string>
+    <string name="pref_preauth_void_pwd" translatable="false">preauth_void_pwd</string>
+    <string name="pref_preauth_cmp_void_pwd" translatable="false">preauth_cmp_void_pwd</string>
+    <string name="pref_preauth_cmp_pwd" translatable="false">preauth_cmp_pwd</string>
+    <string name="pref_sale_void_swipe_card" translatable="false">sale_void_swipe_card</string>
+    <string name="pref_pac_void_swipe_card" translatable="false">pac_void_swipe_card</string>
+    <string name="pref_settle_auto_logout" translatable="false">settle_auto_logout</string>
+    <string name="pref_settle_print_detail" translatable="false">settle_print_detail</string>
+    <string name="pref_offline_upload_type" translatable="false">offline_upload_type</string>
+    <string name="pref_offline_upload_times" translatable="false">offline_upload_times</string>
+    <string name="pref_offline_auto_upload_num" translatable="false">offline_auto_upload_num</string>
+    <string name="pref_supp_emv" translatable="false">supp_emv</string>
+    <string name="pref_judge_emv_mode" translatable="false">judge_emv_mode</string>
+    <!--
+    <string name="pref_supp_ecr" translatable="false">supp_ecr</string>
+    <string name="pref_ecr_timeout" translatable="false">ecr_timeout</string>
+    -->
+    <string name="pref_supp_rate_exch" translatable="false">supp_rate_exch</string>
+    <string name="pref_force_online" translatable="false">force_online</string>
+    <!--<string name="pref_force_sda" translatable="false">force_sda</string>-->
+    <string name="pref_mas_opr_veirfy_void_refund" translatable="false">mas_opr_veirfy_void_refund</string>
+    <string name="pref_track_encrypt" translatable="false">track_encrypt</string>
+    <string name="pref_allow_manual_card_no" translatable="false">allow_manual_card_no</string>
+    <string name="pref_supp_signature" translatable="false">supp_signature</string>
+    <string name="pref_refund_limit_amount" translatable="false">refund_limit_amount</string>
+    <string name="pref_quick_pass_switch" translatable="false">quick_pass_switch</string>
+    <string name="pref_quick_pass_cdcvm_flag" translatable="false">quick_pass_cdcvm_flag</string>
+    <string name="pref_quick_pass_sign_pin_free_limit" translatable="false">quick_pass_sign_pin_free_limit</string>
+    <string name="pref_quick_pass_trans_brush_times" translatable="false">quick_pass_trans_brush_times</string>
+    <string name="pref_quick_pass_trans_times" translatable="false">quick_pass_trans_times</string>
+
+    <!--System params prefs-->
+    <string name="pref_print_debug" translatable="false">print_debug</string>
+    <string name="pref_trans_no" translatable="false">trans_no</string>
+    <string name="pref_batch_no" translatable="false">batch_no</string>
+    <string name="pref_acquire_print" translatable="false">acquire_print</string>
+    <string name="pref_issure_print" translatable="false">issure_print</string>
+    <string name="pref_cur_year" translatable="false">cur_year</string>
+    <string name="pref_merch_merchcode" translatable="false">merch_merchcode</string>
+    <string name="pref_merch_areacode" translatable="false">merch_areacode</string>
+    <string name="pref_voucher_copy_num" translatable="false">voucher_copy_num</string>
+    <string name="pref_printer_gray_level" translatable="false">printer_gray_level</string>
+    <string name="pref_voucher_print_en" translatable="false">voucher_print_en</string>
+    <string name="pref_resend_times" translatable="false">resend_times</string>
+    <string name="pref_sign_resend_times" translatable="false">sign_resend_times</string>
+    <string name="pref_reversal_resend_times" translatable="false">reversal_resend_times</string>
+    <string name="pref_supp_offline_trans" translatable="false">supp_offline_trans</string>
+    <string name="pref_max_trans_num" translatable="false">max_trans_num</string>
+    <string name="pref_tip_mode" translatable="false">tip_mode</string>
+    <string name="pref_ex_contactless_set" translatable="false">ex_contactless_set</string>
+    <string name="pref_ex_contactless_choose" translatable="false">ex_contactless_choose</string>
+    <string name="pref_ex_contactless_serial" translatable="false">ex_contactless_serial</string>
+    <string name="pref_ex_contactless_baut_rate" translatable="false">ex_contactles_rate</string>
+    <string name="pref_sign_pad_choose" translatable="false">sign_pad_choose</string>
+    <string name="pref_force_dl_black" translatable="false">force_dl_black</string>
+    <string name="pref_supp_tip" translatable="false">supp_tip</string>
+    <string name="pref_tip_rate" translatable="false">tip_rate</string>
+    <string name="pref_supp_small_auth" translatable="false">supp_small_auth</string>
+    <string name="pref_supp_external_scanner" translatable="false">supp_external_scanner</string>
+    <string name="pref_external_scanner" translatable="false">external_scanner</string>
+    <string name="pref_internal_scanner" translatable="false">internal_scanner</string>
+    <string name="pref_sale_mask_card_no" translatable="false">sale_mask_card_no</string>
+    <string name="pref_preauth_mask_card_no" translatable="false">preauth_mask_card_no</string>
+    <string name="pref_ecash_mask_card_no" translatable="false">ecash_mask_card_no</string>
+    <string name="pref_supp_sm" translatable="false">supp_sm</string>
+    <string name="pref_supp_sm_period_2" translatable="false">supp_sm_period_2</string>
+
+    <!--Communication prefs-->
+    <string name="pref_tpdu" translatable="false">tpdu</string>
+    <string name="pref_acquirer_comm_type" translatable="false">acquirer_comm_type</string>
+    <string name="pref_acquirer_ssl_type" translatable="false">acquirer_ssl_type</string>
+    <string name="pref_comm_timeout" translatable="false">comm_timeout</string>
+    <string name="pref_modem_telno_1" translatable="false">modem_telno_1</string>
+    <string name="pref_modem_telno_2" translatable="false">modem_telno_2</string>
+    <string name="pref_modem_telno_3" translatable="false">modem_telno_3</string>
+    <string name="pref_modem_need_ext_line" translatable="false">modem_need_ext_line</string>
+    <string name="pref_modem_ext_line_no" translatable="false">modem_ext_line_no</string>
+    <string name="pref_modem_ext_line_delay" translatable="false">modem_ext_line_delay</string>
+    <string name="pref_modem_pre_dail" translatable="false">modem_pre_dail</string>
+    <string name="pref_modem_redail_times" translatable="false">modem_redail_times</string>
+    <string name="pref_modem_timeout" translatable="false">modem_timeout</string>
+    <string name="pref_modem_dial_level" translatable="false">modem_dial_level</string>
+    <string name="pref_modem_dial_mode" translatable="false">modem_dial_mode</string>
+    <string name="pref_modem_check_dial" translatable="false">modem_check_dial</string>
+    <string name="pref_modem_dial_wait_time" translatable="false">modem_dail_wait_time</string>
+    <string name="pref_modem_outline_dial_wiat_time" translatable="false">modem_outline_dial_wiat_time</string>
+    <string name="pref_modem_single_no_keep_time" translatable="false">modem_single_no_keep_time</string>
+    <string name="pref_modem_two_no_interval" translatable="false">modem_two_no_interval</string>
+    <string name="pref_modem_byte" translatable="false">modem_byte</string>
+    <string name="pref_modem_async_type" translatable="false">modem_async_type</string>
+    <string name="pref_mobile_long_link" translatable="false">mobile_long_link</string>
+    <string name="pref_mobile_access_no" translatable="false">mobile_access_no</string>
+    <string name="pref_mobile_apn" translatable="false">mobile_apn</string>
+    <string name="pref_mobile_host_ip" translatable="false">mobile_host_ip</string>
+    <string name="pref_mobile_host_port" translatable="false">mobile_host_port</string>
+    <string name="pref_mobile_back_host_ip" translatable="false">mobile_back_host_ip</string>
+    <string name="pref_mobile_back_host_port" translatable="false">mobile_back_host_port</string>
+    <string name="pref_mobile_need_user" translatable="false">mobile_need_user</string>
+    <string name="pref_mobile_user_name" translatable="false">mobile_user_name</string>
+    <string name="pref_mobile_pwd" translatable="false">mobile_pwd</string>
+    <string name="pref_lan_host_ip" translatable="false">lan_host_ip</string>
+    <string name="pref_lan_host_port" translatable="false">lan_host_port</string>
+    <string name="pref_lan_dhcp" translatable="false">lan_dhcp</string>
+    <string name="pref_lan_local_ip" translatable="false">lan_local_ip</string>
+    <string name="pref_lan_subnet_mask" translatable="false">lan_subnet_mask</string>
+    <string name="pref_lan_gateway" translatable="false">lan_gateway</string>
+    <string name="pref_lan_back_host_ip" translatable="false">lan_back_host_ip</string>
+    <string name="pref_lan_back_host_port" translatable="false">lan_back_host_port</string>
+    <string name="pref_lan_dns1" translatable="false">lan_dns1</string>
+    <string name="pref_lan_dns2" translatable="false">lan_dns2</string>
+    <string name="pref_open_wifi" translatable="false">open_wifi</string>
+
+
+
+
+    <!--Key management prefs-->
+    <string name="pref_key_algorithm" translatable="false">key_algorithm</string>
+    <string name="pref_choose_pinpad" translatable="false">choose_pinpad</string>
+    <string name="pref_internal_ped_ui_style" translatable="false">internal_ped_ui_style</string>
+    <string name="pref_mk_index" translatable="false">mk_index</string>
+    <string name="pref_input_key_manually" translatable="false">input_key_manually</string>
+    <string name="pref_mk_download" translatable="false">mk_download</string>
+
+
+    <!--Currency setting prefs-->
+    <string name="pref_currency_sys" translatable="false">currency_sys</string>
+    <string name="pref_custom_currency" translatable="false">custom_currency</string>
+    <string name="pref_currency_name" translatable="false">currency_name</string>
+    <string name="pref_currency_code" translatable="false">currency_code</string>
+    <string name="pref_currency_decimals" translatable="false">currency_decimals</string>
+
+    <!--Other settings prefs-->
+    <string name="pref_clear_function" translatable="false">clear_function</string>
+    <string name="pref_pos_available_space" translatable="false">pos_available_space</string>
+    <string name="pref_settting_param_print" translatable="false">settting_param_print</string>
+    <string name="pref_settting__print_debug" translatable="false">settting_print_debug</string>
+    <string name="pref_voucher_cn_title" translatable="false">voucher_cn_title</string>
+    <string name="pref_bctc_test" translatable="false">bctc_test</string>
+
+    <!--traditional transaction prefs-->
+    <string name="pref_tts" translatable="false">tts</string>
+    <string name="pref_tts_sale" translatable="false">tts_sale</string>
+    <string name="pref_tts_void" translatable="false">tts_void</string>
+    <string name="pref_tts_refund" translatable="false">tts_refund</string>
+    <string name="pref_tts_balance" translatable="false">tts_balance</string>
+    <string name="pref_tts_preauth" translatable="false">tts_preauth</string>
+    <string name="pref_tts_pavoid" translatable="false">tts_pavoid</string>
+    <string name="pref_tts_pacrequest" translatable="false">tts_pacrequest</string>
+    <string name="pref_tts_pacadvice" translatable="false">tts_pacadvice</string>
+    <string name="pref_tts_pacvoid" translatable="false">tts_pacvoid</string>
+    <string name="pref_tts_offline_settle" translatable="false">tts_offline_settle</string>
+    <string name="pref_tts_adjust" translatable="false">tts_adjust</string>
+
+    <string name="pref_ects" translatable="false">ects</string>
+    <string name="pref_ects_sale" translatable="false">ects_sale</string>
+    <string name="pref_ects_load" translatable="false">ects_load</string>
+    <string name="pref_ects_tload" translatable="false">ects_tload</string>
+    <string name="pref_ects_caload" translatable="false">ects_caload</string>
+    <string name="pref_ects_caloadvoid" translatable="false">cts_caloadvoid</string>
+    <string name="pref_ects_refund" translatable="false">ects_refund</string>
+    <string name="pref_ects_query" translatable="false">ects_query</string>
+
+    <!--key manage-->
+    <string name="pref_sys_admin_pwd" translatable="false">sys_admin_pwd</string>
+    <string name="pref_master_operator_pwd" translatable="false">master_operator_pwd</string>
+    <string name="pref_security_pwd" translatable="false">security_pwd</string>
+
+    <!--scan transaction-->
+    <string name="pref_scts" translatable="false">scts</string>
+    <string name="pref_scts_sale" translatable="false">scts_sale</string>
+    <string name="pref_scts_void" translatable="false">scts_void</string>
+    <string name="pref_scts_refund" translatable="false">scts_refund</string>
+
+    <!--indopay-->
+    <string name="pref_indopay" translatable="false">indopay_mode</string>
+
+
+</resources>

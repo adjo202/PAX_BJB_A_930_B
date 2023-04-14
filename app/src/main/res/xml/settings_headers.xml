@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+
+    <!-- 商户 -->
+    <header
+        android:fragment="com.pax.settings.SettingsMerchantParamFragment"
+        android:icon="@drawable/sys_merchant_manage"
+        android:title="@string/settings_menu_merchant_parameter" />
+
+    <!-- 交易 -->
+    <!--
+    <header
+        android:fragment="com.pax.settings.SettingsTradeManageFragment"
+        android:icon="@drawable/sys_trade_manage"
+        android:title="@string/settings_menu_trade_manage" />
+    -->
+
+    <!-- 系统 -->
+    <header
+        android:fragment="com.pax.settings.SettingsSysParamFragment"
+        android:icon="@drawable/sys_param_manager"
+        android:title="@string/settings_menu_system_parameter" />
+    <!-- 通讯 -->
+    <header
+        android:fragment="com.pax.settings.SettingsCommParamFragment"
+        android:icon="@drawable/sys_comm_manage"
+        android:title="@string/settings_menu_communication_parameter" />
+    <!-- 密钥 -->
+    <header
+        android:fragment="com.pax.settings.SettingsKeyManageFragment"
+        android:icon="@drawable/sys_key_manage"
+        android:title="@string/settings_menu_key_manage" />
+    <!-- 密码 -->
+    <header
+        android:fragment="com.pax.settings.SettingsPwdManageFragment"
+        android:icon="@drawable/sys_pwd_manage"
+        android:title="@string/settings_menu_passwd_manage" />
+    <!-- Currency setting disable request dari indopay doc. UAT 30062021-->
+    <!--<header
+        android:fragment="com.pax.settings.SettingsCurrencyFragment"
+        android:icon="@drawable/sys_trade_manage"
+        android:title="@string/settings_menu_currency_manage"/>-->
+     <!-- 其他 -->
+    <header
+        android:fragment="com.pax.settings.SettingsOtherManageFragment"
+        android:icon="@drawable/sys_other_manage"
+        android:title="@string/settings_menu_other_manage" />
+
+</preference-headers>

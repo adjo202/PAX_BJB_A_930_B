@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <Preference
+        android:fragment="com.pax.settings.SettingsPwdManageDetailFragment"
+        android:key="setting_passwd_system"
+        android:layout="@layout/prefs_list_et_item"
+        android:title="@string/passwdmanage_system" />
+    <Preference
+        android:fragment="com.pax.settings.SettingsPwdManageDetailFragment"
+        android:key="setting_passwd_safe"
+        android:layout="@layout/prefs_list_et_item"
+        android:title="@string/passwdmanage_safe"/>
+
+</PreferenceScreen>

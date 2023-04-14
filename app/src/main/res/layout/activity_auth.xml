@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/prompt_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/prompt_input_amount"
+                android:textSize="@dimen/font_size_normal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/amount_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/start_void_scanner"
+                    android:background="@drawable/edit_frame"
+                    android:orientation="horizontal" >
+
+                    <com.pax.view.CustomEditText
+                        android:id="@+id/auth_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_toLeftOf="@+id/edit_system_keyboard"
+                        android:background="@null"
+                        android:gravity="end|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/font_size_large" />
+
+                    <Button
+                        android:id="@+id/edit_system_keyboard"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/prompt_keybroad"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/start_void_scanner"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/scanner"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/void_last_prompt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/tip" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/prompt_void_last"
+                    android:textColor="@color/prompt_no_pwd_color"
+                    android:textSize="@dimen/font_size_small" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/info_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/gray_button_background"
+        android:text="@string/dialog_ok"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_normal" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/keyboard_softnewposstyle" />
+
+</RelativeLayout>

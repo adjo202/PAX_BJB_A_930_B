@@ -1,0 +1,306 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto" >
+
+    <com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/systempara_menu_voucher_no"
+        android:key="@string/pref_trans_no"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/systempara_menu_voucher_no"
+        myview:defaultValue="@string/voucher_batch_no_default_value"
+        myview:digits="1234567890"
+        myview:ems="6"
+        myview:inputType="number"
+        myview:maxLength="6"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+    <com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/systempara_menu_batch_no"
+        android:key="@string/pref_batch_no"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/systempara_menu_batch_no"
+        myview:defaultValue="@string/voucher_batch_no_default_value"
+        myview:digits="1234567890"
+        myview:ems="6"
+        myview:inputType="number"
+        myview:maxLength="6"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_acquire_print"
+        android:layout="@layout/prefs_list_s_item"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/systempara_menu_is_acquirer_bank"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_issure_print"
+        android:layout="@layout/prefs_list_s_item"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/systempara_menu_is_issuer_bank"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+    <com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/systempara_menu_print_timers"
+        android:key="@string/pref_voucher_copy_num"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/systempara_menu_print_timers"
+        myview:defaultValue="2"
+        myview:digits="1234567890"
+        myview:ems="1"
+        myview:inputType="number"
+        myview:maxLength="1"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+    
+    <com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/systempara_menu_print_gray"
+        android:key="@string/pref_printer_gray_level"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/systempara_menu_print_gray"
+        myview:defaultValue="100"
+        myview:digits="1234567890"
+        myview:ems="3"
+        myview:inputType="number"
+        myview:maxLength="3"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_voucher_print_en"
+        android:layout="@layout/prefs_list_s_item"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/systempara_menu_is_voucher_bank_english"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget"
+        android:enabled="false"/>
+
+    <com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/systempara_menu_resend_times"
+        android:key="@string/pref_resend_times"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/systempara_menu_resend_times"
+        myview:defaultValue="3"
+        myview:digits="1234567890"
+        myview:ems="1"
+        myview:inputType="number"
+        myview:maxLength="1"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+    <com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/systempara_menu_signature_times"
+        android:key="@string/pref_sign_resend_times"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/systempara_menu_signature_times"
+        myview:defaultValue="3"
+        myview:digits="1234567890"
+        myview:ems="1"
+        myview:inputType="number"
+        myview:maxLength="1"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+    <com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/systempara_menu_reversal_times"
+        android:key="@string/pref_reversal_resend_times"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/systempara_menu_reversal_times"
+        myview:defaultValue="3"
+        myview:digits="1234567890"
+        myview:ems="1"
+        myview:inputType="number"
+        myview:maxLength="1"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_supp_offline_trans"
+        android:layout="@layout/prefs_list_s_item"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/systenmpara_menu_support_offline_trans"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+    <com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/systempara_menu_max_trade_num"
+        android:key="@string/pref_max_trans_num"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/systempara_menu_max_trade_num"
+        myview:defaultValue="300"
+        myview:digits="1234567890"
+        myview:ems="3"
+        myview:inputType="number"
+        myview:maxLength="3"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+
+    <PreferenceScreen
+        android:fragment="com.pax.settings.SettingsMaskCardNumFragment"
+        android:key="systemPara_mask_card_number"
+        android:layout="@layout/prefs_list_et_item"
+        android:title="@string/systemPara_mask_card_number" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_ex_contactless_set"
+        android:layout="@layout/prefs_list_s_item"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/systempara_menu_is_ex_no_touch"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+    <com.pax.settings.SettingsSingleChoicePreference
+        android:defaultValue="SP20"
+        android:dependency="@string/pref_ex_contactless_set"
+        android:dialogTitle="@string/systempara_menu_is_ex_no_touch_choose"
+        android:key="@string/pref_ex_contactless_choose"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/systempara_menu_is_ex_no_touch_choose"
+        myview:entries="@array/systempara_menu_ex_no_touch_list_entries"
+        myview:entryValues="@array/systempara_menu_ex_no_touch_list_entries" />
+    <com.pax.settings.SettingsSingleChoicePreference
+        android:defaultValue="RS232A"
+        android:dependency="@string/pref_ex_contactless_set"
+        android:dialogTitle="@string/systempara_menu_is_ex_no_touch_serial_num"
+        android:key="@string/pref_ex_contactless_serial"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/systempara_menu_is_ex_no_touch_serial_num"
+        myview:entries="@array/systempara_menu_ex_no_touch_serial_list_entries"
+        myview:entryValues="@array/systempara_menu_ex_no_touch_serial_list_entries" />
+    <com.pax.settings.SettingsSingleChoicePreference
+        android:defaultValue="115200"
+        android:dependency="@string/pref_ex_contactless_set"
+        android:dialogTitle="@string/systempara_menu_is_ex_no_touch_baud_rate"
+        android:key="@string/pref_ex_contactless_baut_rate"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/systempara_menu_is_ex_no_touch_baud_rate"
+        myview:entries="@array/systempara_menu_ex_no_touch_baud_rate_list_entries"
+        myview:entryValues="@array/systempara_menu_ex_no_touch_baud_rate_list_entries" />
+    <com.pax.settings.SettingsSingleChoicePreference
+        android:defaultValue="S200"
+        android:dialogTitle="@string/systempara_menu_signature_choose"
+        android:key="@string/pref_sign_pad_choose"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/systempara_menu_signature_choose"
+        myview:entries="@array/systempara_menu_signature_entries"
+        myview:entryValues="@array/systempara_menu_signature_entries" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_force_dl_black"
+        android:layout="@layout/prefs_list_s_item"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/systempara_menu_load_blacklist"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_supp_tip"
+        android:layout="@layout/prefs_list_s_item"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/systempara_menu_support_tip"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+    <com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dependency="@string/pref_supp_tip"
+        android:dialogTitle="@string/systempara_menu_tips_rate"
+        android:key="@string/pref_tip_rate"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/systempara_menu_tips_rate"
+        myview:defaultValue="15"
+        myview:digits="1234567890"
+        myview:ems="2"
+        myview:inputType="number"
+        myview:maxLength="2"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_supp_small_auth"
+        android:layout="@layout/prefs_list_s_item"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/systempara_menu_support_small_auth"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_supp_external_scanner"
+        android:layout="@layout/prefs_list_s_item"
+        android:summaryOff="@string/inside"
+        android:summaryOn="@string/outside"
+        android:title="@string/systempara_menu_support_external_scanner"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+    <com.pax.settings.SettingsSingleChoicePreference
+        android:defaultValue="1"
+        android:dependency="@string/pref_supp_external_scanner"
+        android:dialogTitle="@string/external_scanner_select"
+        android:key="@string/pref_external_scanner"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/external_scanner_select"
+        myview:entries="@array/systempara_menu_external_scanner_entries"
+        myview:entryValues="@array/systempara_menu_external_scanner_entry_values" />
+    <com.pax.settings.SettingsSingleChoicePreference
+        android:defaultValue="2"
+        android:dialogTitle="@string/internal_scanner_select"
+        android:key="@string/pref_internal_scanner"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/internal_scanner_select"
+        myview:entries="@array/systempara_menu_internal_scanner_entries"
+        myview:entryValues="@array/systempara_menu_internal_scanner_entry_values" />
+
+</PreferenceScreen>

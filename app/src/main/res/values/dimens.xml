@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="alert_width">280dp</dimen>
+    <dimen name="alert_height">180dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+    <dimen name="menu_pop_location">190dp</dimen>
+    <dimen name="menu_pop_text_size">18sp</dimen>
+    <dimen name="mainmenu_text_size">28sp</dimen>
+    <dimen name="page_sliding_text_size">18sp</dimen>
+    <dimen name="disp_single_amount_text">25sp</dimen>
+    <dimen name="disp_single_version_text">22sp</dimen>
+
+    <!-- new font size -->
+    <dimen name="font_size_smallest_small">18sp</dimen>
+    <dimen name="font_size_smallest">14sp</dimen>
+    <dimen name="font_size_smaller">15sp</dimen>
+    <dimen name="font_size_small">17sp</dimen>
+    <dimen name="font_size_normal_small">19sp</dimen>
+    <dimen name="font_size_normal">20sp</dimen>
+    <dimen name="font_size_large">23sp</dimen>
+    <dimen name="font_size_larger_small">24sp</dimen>
+    <dimen name="font_size_larger">25sp</dimen>
+    <dimen name="font_size_largest">60sp</dimen>
+    
+    <dimen name="dialog_window_padding">10dp</dimen>
+    <dimen name ="app_flag_text_size" >17sp</dimen>
+
+    <!-- Merged by Steven 2017-4-11 14:22:54-->
+    <dimen name="search_employee_corners">6dp</dimen>
+    <dimen name="font_size_larger_normall">37sp</dimen>
+
+</resources>

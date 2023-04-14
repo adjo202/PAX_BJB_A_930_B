@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PAX_BJB_A_930_B.iml" filepath="$PROJECT_DIR$/.idea/modules/PAX_BJB_A_930_B.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PAX_BJB_A_930_B.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PAX_BJB_A_930_B.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PAX_BJB_A_930_B.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PAX_BJB_A_930_B.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PAX_BJB_A_930_B.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PAX_BJB_A_930_B.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PAX_BJB_A_930_B.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PAX_BJB_A_930_B.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eemv/PAX_BJB_A_930_B.eemv.iml" filepath="$PROJECT_DIR$/.idea/modules/eemv/PAX_BJB_A_930_B.eemv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eemv/PAX_BJB_A_930_B.eemv.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/eemv/PAX_BJB_A_930_B.eemv.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eemv/PAX_BJB_A_930_B.eemv.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eemv/PAX_BJB_A_930_B.eemv.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eemv/PAX_BJB_A_930_B.eemv.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/eemv/PAX_BJB_A_930_B.eemv.unitTest.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="currency_name">
+        <item>RMB</item>
+        <item>HKD</item>
+        <item>MOP</item>
+        <item>MYR</item>
+        <item>SGD</item>
+        <item>THB</item>
+        <item>IDR</item>
+    </string-array>
+    <string-array name="currency_code">
+        <item>156</item>
+        <item>344</item>
+        <item>446</item>
+        <item>458</item>
+        <item>702</item>
+        <item>764</item>
+        <item>360</item>
+    </string-array>
+</resources>

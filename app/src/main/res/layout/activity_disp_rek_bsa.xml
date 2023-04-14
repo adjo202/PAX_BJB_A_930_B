@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header_layout" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:background="@android:color/white"
+                android:weightSum="2"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:padding="20dp"
+                    android:layout_margin="10dp"
+                    android:text="Rekening BSA"
+                    android:layout_weight="1"
+                    android:id="@+id/btn1"
+                    android:background="@drawable/gray_button_background"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </Button>
+
+                <Button
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/gray_button_background"
+                    android:textColor="@android:color/black"
+                    android:text="Bill Payment Card"
+                    android:layout_weight="1"
+                    android:id="@+id/btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/infos_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="249dp"
+        android:background="@drawable/settings_button_click_background"
+        android:text="@string/dialog_ok"
+        android:textSize="@dimen/font_size_normal" />
+
+
+
+</RelativeLayout>

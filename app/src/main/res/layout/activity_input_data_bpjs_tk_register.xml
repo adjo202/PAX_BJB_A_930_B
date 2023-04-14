@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg"
+    android:orientation="vertical" >
+
+
+    <include layout="@layout/header_layout" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/window_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NIK"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:gravity="center"
+                            android:id="@+id/et_nik"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:inputType="number"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:maxLength="18"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Lengkap"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:gravity="center"
+                            android:id="@+id/et_nama_lengkap"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:inputType="textCapCharacters"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:maxLength="30"/>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Handphone"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:gravity="center"
+                            android:id="@+id/et_hp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:inputType="number"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:maxLength="20"/>
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tanggal Lahir"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:gravity="center"
+                            android:id="@+id/et_tgl_lahir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:hint="ddmmyyyy"
+                            android:inputType="number"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:maxLength="8"/>
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:gravity="center"
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:inputType="textEmailAddress"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:maxLength="30"/>
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Domisili"
+                            android:textSize="16sp" />
+
+
+                        <EditText
+                            android:gravity="start"
+                            android:id="@+id/et_domisili"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:ems="20"
+                            android:inputType="textCapCharacters"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:maxLength="35"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Upah"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:gravity="center"
+                            android:id="@+id/et_salary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:inputType="number"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:maxLength="15"/>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingBottom="5dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pilih Program"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:gravity="center"
+                            android:id="@+id/format_program"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:hint="Cari"
+                            android:background="@color/key_normal_color"
+                            android:maxLength="50"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingBottom="5dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bulan Program"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:gravity="center"
+                            android:id="@+id/month_program"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:hint="Cari"
+                            android:background="@color/key_normal_color"
+                            android:maxLength="50"/>
+                    </LinearLayout>
+
+
+
+
+
+                    <!--
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingBottom="5dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Provinsi"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:gravity="center"
+                            android:id="@+id/sv_provinsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:hint="Cari"
+                            android:background="@color/key_normal_color"
+                            android:maxLength="50"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingBottom="5dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kabupaten"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:gravity="center"
+                            android:id="@+id/sv_kab_kot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:hint="Cari"
+                            android:background="@color/key_normal_color"
+                            android:maxLength="50"/>
+                    </LinearLayout>
+                    -->
+
+
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingBottom="5dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kantor BPJS Ketenagakerjaan"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:gravity="center"
+                            android:id="@+id/sv_bpjs_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:hint="Cari"
+                            android:background="@color/key_normal_color"
+                            android:maxLength="50"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingBottom="5dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jenis Pekerjaan"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:gravity="center"
+                            android:id="@+id/sv_list_pekerjaan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:hint="Cari"
+                            android:background="@color/key_normal_color"
+                            android:maxLength="50"/>
+                    </LinearLayout>
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingBottom="5dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jenis Pekerjaan 2 (Optional)"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:gravity="center"
+                            android:id="@+id/sv_list_pekerjaan2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:hint="Cari"
+                            android:background="@color/key_normal_color"
+                            android:maxLength="50"/>
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingBottom="5dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lokasi Pekerjaan"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:gravity="center"
+                            android:id="@+id/sv_lokasi_pekerjaan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:hint="Cari"
+                            android:background="@color/key_normal_color"
+                            android:maxLength="50"/>
+                    </LinearLayout>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingBottom="5dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jam Awal Kerja"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                            <EditText
+                                android:gravity="center"
+                                android:id="@+id/start_time"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:ems="20"
+                                android:text="08:00"
+                                android:inputType="text"
+                                android:textSize="18sp"
+                                tools:ignore="LabelFor"
+                                android:maxLength="5"/>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_frame"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingBottom="5dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jam Akhir Kerja"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:gravity="center"
+                            android:id="@+id/end_time"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:ems="20"
+                            android:text="17:00"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            tools:ignore="LabelFor"
+                            android:maxLength="5"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="20dp">
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/lanjutkanBtn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:background="@drawable/settings_button_click_background"
+                        android:text="Lanjutkan"
+                        android:textColor="@color/colorPrimaryBackground"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
+

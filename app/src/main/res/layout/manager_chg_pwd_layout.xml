@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/please_input_new_pwd"
+                android:textSize="@dimen/font_size_normal" />
+
+            <com.pax.view.CustomEditText
+                android:id="@+id/new_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_frame"
+                android:inputType="numberPassword"
+                android:lines="1"
+                android:maxLength="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearlayout_1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/please_reinput_new_pwd"
+                android:textSize="@dimen/font_size_normal" />
+
+            <com.pax.view.CustomEditText
+                android:id="@+id/re_new_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_frame"
+                android:inputType="numberPassword"
+                android:lines="1"
+                android:maxLength="6" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/oper_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/linearlayout_2"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_click_background"
+            android:text="@string/dialog_ok"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_normal" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/keyboard_softnewposstyle" />
+    </RelativeLayout>
+
+</LinearLayout>

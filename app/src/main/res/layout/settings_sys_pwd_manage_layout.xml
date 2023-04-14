@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/set_para1_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text=""
+        android:textSize="@dimen/mainmenu_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/key_normal_color"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_old_password"
+                android:textColor="#030303"
+                android:textSize="17sp" />
+
+            <com.pax.view.CustomEditText
+                android:id="@+id/input_old_password_text"
+                android:layout_width="0dp" 
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="8"
+                android:focusable="true"
+                android:gravity="center"
+                android:inputType="phone"
+                android:maxLength="8"
+                android:password="true"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="30.67sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/input_new_password"
+                android:textColor="#030303"
+                android:textSize="17sp" />
+
+            <com.pax.view.CustomEditText
+                android:id="@+id/input_new_password_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="8"
+                android:focusable="true"
+                android:gravity="center"
+                android:inputType="phone"
+                android:maxLength="8"
+                android:password="true"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="30.67sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/input_again_new_password"
+                android:textColor="#030303"
+                android:textSize="17sp" />
+
+            <com.pax.view.CustomEditText
+                android:id="@+id/input_again_new_password_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="8"
+                android:focusable="true"
+                android:gravity="center"
+                android:inputType="phone"
+                android:maxLength="8"
+                android:password="true"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="30.67sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_input_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/settings_button_click_background"
+        android:text="@string/dialog_ok"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_normal" />
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":app:androidTest" external.linked.project.path="$MODULE_DIR$/../../../app" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
+        <afterSyncTasks>
+          <task>generateDebugSources</task>
+        </afterSyncTasks>
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/main/res;file://$MODULE_DIR$/../../../app/src/debug/res;file://$MODULE_DIR$/../../../app/build/generated/res/rs/debug;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/debug" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/androidTest/res;file://$MODULE_DIR$/../../../app/src/androidTestDebug/res;file://$MODULE_DIR$/../../../app/build/generated/res/rs/androidTest/debug;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/androidTest/debug" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/aidl_source_output_dir/debugAndroidTest/compileDebugAndroidTestAidl/out" />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/renderscript_source_output_dir/debugAndroidTest/compileDebugAndroidTestRenderscript/out" />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/res/resValues/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/res/rs/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/source/apt/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/source/buildConfig/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../app/src/androidTest" />
+    <content url="file://$MODULE_DIR$/../../../app/src/androidTestDebug" />
+    <orderEntry type="jdk" jdkName="Android API 25 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="PAX_BJB_A_930_B.eemv.main" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/app/libs/ant.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/app/libs/commons-lang-2.4.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/app/libs/GLComm_V1.10.01_20220614.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/app/libs/gson-2.1.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/app/libs/okio-1.12.0.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/app/libs/PaxGL_V1.00.04_20170303.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/app/libs/PaxNeptuneLiteApi_V2.01.00_20171025.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/app/libs/paxstore-sdk-java-4.0.0-20170810.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/app/libs/PaxUpdateServiceApi_V3.00.00_20161228.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/app/libs/sqlcipherandroid_V20160922.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/app/libs/zxing.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/eemv/libs/CL_common_V1.00.00_20170616.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/eemv/libs/JCB_v100.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/eemv/libs/libAmex_V1.00.00_20170614.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/eemv/libs/libDevice_V1.00.00_20170616.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/eemv/libs/libDPAS_V1.00.00_20170809.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/eemv/libs/libEMV_V1.00.00_20170616.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/eemv/libs/libEntry_V1.00.00_20170616.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/eemv/libs/libMC_V1.00.00_20170616.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/eemv/libs/libQPBOC_V1.00.00_20170705.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Alexander/Kerja/INDOPAY/PAX_BJB_A_930_B/eemv/libs/libWave_V1.00.00_20170616.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.nineoldandroids:library:2.4.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.github.bumptech.glide:glide:3.7.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:slf4j-android:1.6.1-RC1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.leakcanary:leakcanary-analyzer:1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-annotations:25.4.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.haha:haha:2.0.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.leakcanary:leakcanary-watcher:1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.leakcanary:leakcanary-android:1.5@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: cn.bingoogolapple:bga-banner:2.1.7@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:appcompat-v7:25.4.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-v4:25.4.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:recyclerview-v7:25.4.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.github.MdFarhanRaja:SearchableSpinner:2.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:animated-vector-drawable:25.4.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-vector-drawable:25.4.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-fragment:25.4.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-core-ui:25.4.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-media-compat:25.4.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-core-utils:25.4.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-compat:25.4.0@aar" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="PAX_BJB_A_930_B.app.main" />
+</module>

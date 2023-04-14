@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/ecload_p1"
+            android:textColor="@color/prompt_text_color"
+            android:textSize="@dimen/font_size_smaller" />
+
+        <TextView
+            android:id="@+id/ecload_p1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.5"
+            android:textSize="@dimen/font_size_smaller" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="right"
+            android:text="@string/ecload_p2"
+            android:textColor="@color/prompt_text_color"
+            android:textSize="@dimen/font_size_smaller" />
+
+        <TextView
+            android:id="@+id/ecload_p2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.5"
+            android:textSize="@dimen/font_size_smaller" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ecload_beforeAmount"
+            android:textColor="@color/prompt_text_color"
+            android:textSize="@dimen/font_size_smaller" />
+
+        <TextView
+            android:id="@+id/ecload_beforeAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.5"
+            android:textSize="@dimen/font_size_smaller" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/ecload_afterAmount"
+            android:textColor="@color/prompt_text_color"
+            android:textSize="@dimen/font_size_smaller" />
+
+        <TextView
+            android:id="@+id/eclaod_afterAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.5"
+            android:textSize="@dimen/font_size_smaller" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ecload_date"
+            android:textColor="@color/prompt_text_color"
+            android:textSize="@dimen/font_size_smaller" />
+
+        <TextView
+            android:id="@+id/ecload_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.5"
+            android:textColor="@color/trans_amount_color"
+            android:textSize="@dimen/font_size_smaller" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/ecload_date"
+            android:textColor="@color/prompt_text_color"
+            android:textSize="@dimen/font_size_smaller" />
+
+        <TextView
+            android:id="@+id/ecload_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.5"
+            android:textSize="@dimen/font_size_smaller" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ecload_countryCode"
+            android:textColor="@color/prompt_text_color"
+            android:textSize="@dimen/font_size_smaller" />
+
+        <TextView
+            android:id="@+id/ecload_countryCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.5"
+            android:textSize="@dimen/font_size_smaller" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/ecload_atc"
+            android:textColor="@color/prompt_text_color"
+            android:textSize="@dimen/font_size_smaller" />
+
+        <TextView
+            android:id="@+id/ecload_atc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.5"
+            android:textSize="@dimen/font_size_smaller" />
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ecload_merchName"
+            android:textColor="@color/prompt_text_color"
+            android:textSize="@dimen/font_size_smaller" />
+
+        <TextView
+            android:id="@+id/ecload_merchName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.5"
+            android:textSize="@dimen/font_size_smaller" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+</LinearLayout>

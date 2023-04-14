@@ -1,0 +1,51 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceScreen
+        android:fragment="com.pax.settings.SettingsClearFunc"
+        android:key="@string/pref_clear_function"
+        android:layout="@layout/prefs_list_et_item"
+        android:title="@string/othermanage_menu_set_clear_func" />
+
+    <Preference
+        android:capitalize="words"
+        android:key="@string/pref_pos_available_space"
+        android:layout="@layout/prefs_list_et_item"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="1244"
+        android:title="@string/om_cleartrade_menu_pos_space" />
+
+    <!-- 参数打印 -->
+    <Preference
+        android:key="@string/pref_settting_param_print"
+        android:layout="@layout/prefs_list_et_item"
+        android:title="@string/othermanage_menu_set_para_print" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_settting__print_debug"
+        android:layout="@layout/prefs_list_s_item"
+        android:summaryOn="@string/yes"
+        android:summaryOff="@string/no"
+        android:title="@string/othermanage_menu_print_debug"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget"/>
+    <!-- 签购单打印 -->
+    <PreferenceCategory
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/othermanage_menu_set_vouchersheet_print" >
+        <com.pax.settings.SettingsEditTextPreference
+            xmlns:myview="http://schemas.android.com/apk/res/com.pax.up.bjb"
+            android:capitalize="words"
+            android:dialogTitle="@string/om_vouchersheet_menu_title_input"
+            android:key="@string/pref_voucher_cn_title"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/om_vouchersheet_menu_title_input"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

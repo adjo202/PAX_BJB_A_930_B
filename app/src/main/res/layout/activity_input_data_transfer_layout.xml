@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_layout" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/prompt_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="18dp"
+        android:textSize="@dimen/font_size_normal" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/window_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_frame"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank Tujuan"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <Spinner
+                android:background="@drawable/bg_spinner"
+                android:gravity="center"
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:inputType="text"
+                android:textSize="18sp"
+                tools:ignore="LabelFor"
+                android:maxLength="50"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_frame"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Rekening"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:gravity="center"
+                android:id="@+id/et_nomor_rekening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:inputType="number"
+                android:textSize="18sp"
+                tools:ignore="LabelFor"
+                android:maxLength="20"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_frame"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:id="@+id/textViewAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nominal Setoran"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:gravity="center"
+                android:id="@+id/et_nominal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:inputType="number"
+                android:textSize="18sp"
+                tools:ignore="LabelFor"
+                android:maxLength="11"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_frame"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Referensi"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:gravity="center"
+                android:id="@+id/et_reffnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:inputType="number"
+                android:textSize="18sp"
+                tools:ignore="LabelFor"
+                android:maxLength="16"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:id="@+id/infos_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/settings_button_click_background"
+            android:text="@string/dialog_cancel"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/infos_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/settings_button_click_background"
+            android:text="@string/dialog_ok"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

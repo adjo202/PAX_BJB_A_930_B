@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+          package="com.pax.up.bjb">
+
+    <!--<uses-sdk android:minSdkVersion="18" android:targetSdkVersion="23"/>-->
+
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- android 6 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+
+
+    <application
+        android:name="com.pax.pay.app.FinancialApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:node="replace"
+        >
+        <activity
+            android:name="com.pax.pay.MainActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.pax.pay.service.PaymentService">
+            <intent-filter>
+                <action android:name="com.pax.pay.SERVICE"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.pax.pay.PaymentActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity
+            android:name="com.pax.pay.LoginActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="com.pax.pay.operator.OperLogonActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.settings.SettingsActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SearchCardActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SearchCardCustomActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DispTransDetailActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DispTransDetailNewActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.ScanCodeActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputEcRefundDataActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DispEcRecordActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SignatureActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DispQRActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SelectOptionActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.menu.AuthMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.menu.EcMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.menu.InstalMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.menu.ManageMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.menu.BypassMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.menu.OperMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.operator.OperQueryActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.operator.OperAddActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity
+            android:name="com.pax.pay.operator.OperDelActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.operator.OperChgPwdActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.operator.ManagerChgPwdActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputTransData2Activity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputTransData1Activity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputBillingActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.record.TransQueryActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.record.DetailsActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.record.DetailsNewActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SettleActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.menu.OthersMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.trans.action.activity.EnterPinActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade_dialog">
+        </activity>
+        <activity
+            android:name="com.pax.pay.menu.OfflineMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.menu.LogonMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.UnlockTerminalActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity
+            android:name="com.pax.pay.menu.FunctionMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.menu.QueryAppListActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.menu.MoToMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.menu.DynamicQrMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.menu.StaticQrMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.menu.RecurringActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.menu.QrisMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+        <activity
+            android:name="com.pax.pay.pulse.PulseActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.ppob.PPOBPrabayarActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.pulse.PulseDetailsActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.menu.MiniBankingActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.menu.PPOBActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.menu.MPNG2MenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.menu.PaymentMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.menu.PulsaDataMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SelectAccountActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputDataNasabah2Activity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputDataNasabahActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputESamsatDataActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputPDAMDataActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputPascabayarDataActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DispRekBSAActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputDataTransferctivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputDataCetakUlangActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputDataTransferActivityNew"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputDataOverbookingActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DispTransScrollActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputDataPBBActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+
+        <activity
+            android:name="com.pax.pay.menu.TransferMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputDataRedeemPointActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.menu.BPJSKetenagakerjaanMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputBPJSTkRegisterActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputBPJSTkPaymentActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.menu.BPJSDownloadMenuActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputBPJSTkVerificationActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DispTransDetailUsing2ButtonActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Anim_fade">
+        </activity>
+
+
+
+
+
+
+        <!-- <provider -->
+        <!-- android:name="com.pax.appstore.PaxAppStoreProvider" -->
+        <!-- android:authorities="com.pax.up.std.paxappstoreprovider" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true" /> -->
+
+
+        <!-- <service -->
+        <!-- android:name="com.pax.appstore.PaxAppStoreService" -->
+        <!-- android:exported="true" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.pax.up.std.paxappstoreservice" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <service android:name="com.pax.pay.service.LockService">
+            <intent-filter>
+                <action android:name="com.pax.pay.LOCKSERVICE"/>
+            </intent-filter>
+        </service>
+
+        <!-- <receiver android:name="com.pax.pay.service.DownloadParamReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.paxmarket.ACTION_TO_DOWNLOAD_PARAMS" /> -->
+        <!-- <category android:name="com.pax.up.std" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <service android:name="com.pax.pay.service.DownloadParamService"/> -->
+
+        <activity android:name="com.pax.pay.menu.CouponMenuActivity">
+        </activity>
+    </application>
+
+</manifest>

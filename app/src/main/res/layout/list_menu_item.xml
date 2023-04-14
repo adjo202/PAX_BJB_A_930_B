@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/list_menu_bg" >
+
+    <ImageView
+        android:id="@+id/iv_item"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/app_other"/>
+
+    <com.pax.view.AlwaysMarqueeTextView
+        android:id="@+id/tv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_item"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:maxLines="1"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/font_size_normal"/>
+</RelativeLayout>

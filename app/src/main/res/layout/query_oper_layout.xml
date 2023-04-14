@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_input_pin_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="48dp"
+                android:background="@color/gray_input_pin_bg" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:background="@drawable/table"
+                android:gravity="center"
+                android:text="@string/manager_oper_id"
+                android:textSize="@dimen/font_size_small" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="3"
+                android:background="@drawable/table"
+                android:gravity="center"
+                android:text="@string/manager_oper_name"
+                android:textSize="@dimen/font_size_small" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="48dp"
+                android:background="@color/gray_input_pin_bg" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/query_oper_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@android:color/transparent"
+            android:divider="@null" >
+        </ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_input_pin_bg" />
+    </LinearLayout>
+
+</LinearLayout>

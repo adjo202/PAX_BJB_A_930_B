@@ -1,0 +1,82 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto" >
+
+    <com.pax.settings.SettingsSingleChoicePreference
+        android:capitalize="words"
+        android:dialogTitle="@string/keymanage_menu_key_des_type_choose"
+        android:key="@string/pref_key_algorithm"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/keymanage_menu_des_type"
+        myview:entries="@array/keymanage_menu_key_des_type_list_entries"
+        myview:entryValues="@array/keymanage_menu_key_des_type_list_entries" />
+    <com.pax.settings.SettingsSingleChoicePreference
+        android:defaultValue="true"
+        android:dialogTitle="@string/keymanage_menu_pwd_pad_choose"
+        android:key="@string/pref_choose_pinpad"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/systempara_menu_is_ex_pinpad"
+        myview:entries="@array/keymanage_menu_pwd_pad_list_entries"
+        myview:entryValues="@array/keymanage_menu_pwd_pad_list_entries" />
+    <com.pax.settings.SettingsSingleChoicePreference
+        android:defaultValue="2"
+        android:dialogTitle="@string/keymanage_menu_internal_pad_ui_style"
+        android:key="@string/pref_internal_ped_ui_style"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/keymanage_menu_internal_pad_ui_style"
+        myview:entries="@array/keymanage_menu_internal_pad_list_entries"
+        myview:entryValues="@array/keymanage_menu_internal_pad_list_entry_values" />
+
+    <PreferenceCategory
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/keymanage_menu_key_value" >
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/keymanage_menu_tmk_index_no"
+            android:key="@string/pref_mk_index"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/keymanage_menu_tmk_index_no"
+            myview:defaultValue="1"
+            myview:digits="1234567890"
+            myview:inputType="number"
+            myview:maxLength="2"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/keymanage_menu_tmk_value"
+            android:key="@string/pref_input_key_manually"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/keymanage_menu_tmk_value"
+            myview:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            myview:maxLength="48"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/keymanage_menu_download_tmk_from_server" >
+        <Preference
+            android:capitalize="words"
+            android:key="@string/pref_mk_download"
+            android:layout="@layout/prefs_list_et_item"
+            android:title="@string/keymanage_menu_tmk_download"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

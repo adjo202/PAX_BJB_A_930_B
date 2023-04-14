@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_employee_all"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/version_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dialog_employee_title"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/prompt_no_pwd_color"
+        android:textSize="@dimen/font_size_large" />
+
+    <TextView
+        android:id="@+id/version_tv"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/trans_amount_color"
+        android:textSize="@dimen/font_size_large" />
+
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_click_background"
+        android:text="@string/dialog_ok"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_normal" />
+
+</LinearLayout>

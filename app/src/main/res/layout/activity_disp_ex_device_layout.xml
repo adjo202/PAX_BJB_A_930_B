@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_employee_all"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/alert_width"
+        android:layout_height="@dimen/alert_height"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_employee_all"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/prompt_ex_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ex_pinpad" />
+
+        <TextView
+            android:id="@+id/prompt_ex_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/prompt_no_password"
+            android:textColor="@color/prompt_no_pwd_color"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+
+</LinearLayout>

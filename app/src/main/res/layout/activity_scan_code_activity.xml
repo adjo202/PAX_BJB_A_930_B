@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/layout_header"
+        layout="@layout/header_layout" />
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_header"
+        android:orientation="vertical" >
+
+        <!-- 显示金额 -->
+
+        <RelativeLayout
+            android:id="@+id/amount_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="18dp"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_prompt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/searchcard_layout"
+                android:layout_marginBottom="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/trans_amount"
+                    android:textColor="@color/prompt_no_pwd_color"
+                    android:textSize="@dimen/font_size_normal_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/ll_prompt_amount"
+                android:id="@+id/searchcard_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/amount_txt_ec"
+                    android:text="￥"
+                    android:textColor="@color/trans_amount_color"
+                    android:textSize="@dimen/font_size_small" />
+
+                <TextView
+                    android:id="@+id/amount_txt_ec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount_default"
+                    android:textColor="@color/trans_amount_color"
+                    android:textSize="@dimen/font_size_larger" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:layout_gravity="center"
+            android:src="@drawable/line4" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="71dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/scan_code" />
+            </LinearLayout>
+
+            <!-- 确定按键 -->
+
+            <Button
+                android:id="@+id/ok_scan_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/button_click_background"
+                android:text="@string/start_scan"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_size_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <response code="00" category="A" message="Sukses"/> <!-- Success -->
+    <response code="01" category="C" message="Kartu Bermasalah, Hubungi Bank"/> <!-- Please Let Cardholder Contact With Issuer -->
+    <response code="03" category="C" message="Agen Tidak Terdaftar"/> <!-- Invalid Merchant -->
+    <response code="04" category="D" message="Kartu Bermasalah, Hubungi Bank"/> <!-- The Card Is Confiscated(POS) -->
+    <response code="05" category="C" message="Transaksi Gagal, Hubungi Bank"/> <!-- Cardholder Authentication Fail -->
+    <response code="10" category="A" message="Sukses, untuk nilai yang terpisah"/> <!-- Display Partial Approved Amount,Prompt Operator -->
+    <response code="11" category="A" message="Sukses, untuk pelanggan VIP"/> <!-- Success, VIP Customer -->
+    <response code="12" category="C" message="Transaksi tidak support"/> <!-- Invalid Transaction -->
+    <response code="13" category="B" message="Nominal salah"/> <!-- Invalid Amount -->
+    <response code="14" category="B" message="Akun/No. Kartu salah / tidak terdaftar"/> <!-- Invalid Account -->
+    <response code="15" category="C" message="Kartu tidak terdaftar dengan Bank penerbit"/> <!-- The Card Has No Corresponding Card Issuers -->
+    <response code="21" category="C" message="Kartu Tidak Diinisialisasi atau Kartu Tidak Aktif"/> <!-- The Card Is Not Initialized or Sleeping Card -->
+    <response code="22" category="C" message="Transaksi/Batch Double"/> <!-- Operate Error, Or Beyond the Number of Days the Transaction Allowed -->
+    <response code="25" category="C" message="Transaksi sebelumnya tidak ada, Hubungi Bank"/> <!-- No Original Trade, Please Contact Issuer -->
+    <response code="30" category="C" message="Silahkan Coba Lagi / Format Error"/> <!-- Please Retry -->
+    <response code="34" category="D" message="Kartu Curian, Mohon Disita"/> <!-- Cheating Card, Retain Card -->
+    <response code="38" category="D" message="PIN/Password salah melebihi batas waktu, hubungi Bank"/> <!-- Password Error Times Exceed, Please Contact Issuer -->
+    <response code="40" category="C" message="Jenis Transaksi Tidak Didukung oleh Bank"/> <!-- Transaction Type is Not Supported by Issuer -->
+    <response code="41" category="D" message="Kartu terlapor hilang, mohon disita"/> <!-- Report Loss Card,Please Confiscate(POS) -->
+    <response code="43" category="D" message="Kartu Curian, Mohon Disita"/> <!-- Stolen Card, Please Confiscate -->
+    <response code="45" category="C" message="Silahkan Gunakan Kartu Chip"/> <!-- Please Use Chip Card -->
+    <response code="51" category="C" message="Saldo Tidak Cukup"/> <!-- Available Balance Is Insufficient -->
+<!--    <response code="54" category="C" message="The Card Is Out Of Date"/>-->
+	<response code="52" category="C" message="Rekening Giro Tidak Ada"/> <!-- No Checking Account -->
+	<response code="53" category="C" message="Rekening Tabungan Tidak Ada"/> <!-- No Saving Account -->
+    <response code="54" category="C" message="Sudah Dibayar"/> <!-- Already Paid -->
+    <response code="55" category="C" message="PIN/Password Salah, Silahkan Coba Lagi"/> <!-- Password Error -->
+    <response code="57" category="C" message="Transaksi Dengan Kartu Tidak Diizinkan"/> <!-- Do Not Allow Transaction by the Card -->
+    <response code="58" category="C" message="Transaksi Tidak Diizinkan"/> <!-- Issuer Do Not Allow The Card To Make This Deal In The POS -->
+    <response code="59" category="C" message="Kesalahan Pada Kartu, Hubungi Bank"/> <!-- Card Authoriztion Error -->
+    <response code="61" category="C" message="Melebihi Jumlah Transaksi"/> <!-- Transaction Amount Exceed -->
+    <response code="62" category="C" message="Kartu Terbatas"/> <!-- Restricted Card -->
+    <response code="64" category="C" message="Jumlah Transaksi Tidak Sesuai"/> <!-- Transaction Amount Can Not Match With Original -->
+    <response code="65" category="C" message="Melebihi Jumlah Penarikan Yang Diizinkan"/> <!-- Number Of Withdrawals Exceed Allowed -->
+    <response code="68" category="C" message="Transaksi Melebihi Waktu, Silahkan Coba Lagi"/> <!-- Transaction Timeout, Please Retry -->
+    <response code="75" category="C" message="Kesalahan PIN/Password Telah Melebihi Batas"/> <!-- Password Error Times Exceed -->
+    <response code="76" category="C" message="Akun/Rekening Tidak Dapat Digunakan, Hubungi Bank"/> <!-- Unusable Account -->
+	<response code="78" category="C" message="Kartu Terblokir"/>
+	<response code="83" category="C" message="Akun Tidak Aktif"/> <!-- Inactive Account -->
+	<response code="89" category="C" message="Layanan Route Tidak Valid"/> <!-- Invalid Route Service -->
+    <response code="90" category="C" message="Potongan Harian Sistem, Coba Beberapa Saat Lagi"/> <!-- System Daily Cut, Please Retry Later -->
+    <response code="91" category="C" message="Status Bank Tidak Normal, Coba Beberapa Saat Lagi"/> <!-- Issuer Status Abnormal, Please Retry Later -->
+    <response code="92" category="C" message="Jalur Bank Tidak Normal, Coba Beberapa Saat Lagi"/> <!-- Issuer Line Abnormal, Please Retry Later -->
+    <response code="94" category="C" message="Transaksi Berulang/Ganda, Coba Beberapa Saat Lagi"/> <!-- Reject, Repeated Transaction, Please Retry Later -->
+    <response code="95" category="C" message="Harga Tidak Sesuai"/>
+    <response code="96" category="C" message="Kerusakan Sistem, Coba Beberapa Saat Lagi"/> <!-- Reject, Exchange Center Abnormal, Please Retry Later -->
+    <response code="97" category="D" message="Terminal ID Tidak Terdaftar"/> <!-- Terminal Number Not Registered -->
+    <response code="98" category="E" message="Bank Penerbit Timeout"/> <!-- Issuer Timeout -->
+    <response code="99" category="B" message="PIN Key Salah, Harap Download TMK dan Logon"/> <!-- PIN Format Error, Please Logon Again -->
+    <response code="A0" category="B" message="Kesalahan Otorisasi MAC, Harap Download TMK dan Logon"/> <!-- MAC Authorization Error, Please Logon Again -->
+    <response code="A1" category="C" message="Mata Uang Transfer Tidak Sesuai"/> <!-- Transfer Currency Inconsistent -->
+    <response code="A2" category="A" message="Transaksi Berhasil, Mohon Konfirmasi Ke Antar Bank"/> <!-- Transaction Success, Please Confirm To Inter-Bank -->
+    <response code="A3" category="C" message="Nomor Rekening Modal Salah"/> <!-- Capital Account Number Incorrect -->
+    <response code="A4" category="A" message="Transaksi Berhasil, Mohon Konfirmasi Ke Antar Bank"/> <!-- Transaction Success, Please Confirm To Inter-Bank -->
+    <response code="A5" category="A" message="Transaksi Berhasil, Mohon Konfirmasi Ke Antar Bank"/> <!-- Transaction Success, Please Confirm To Inter-Bank -->
+    <response code="A6" category="A" message="Transaksi Berhasil, Mohon Konfirmasi Ke Antar Bank"/> <!-- Transaction Success, Please Confirm To Inter-Bank -->
+    <response code="A7" category="C" message="Proses Keamanan Gagal"/> <!-- Security Process Failed -->
+    <response code="46" category="C" message="Kupon Telah Digunakan"/> <!-- Coupon is already used -->
+    <response code="M1" category="C" message="Kupon Telah Digunakan"/> <!-- Coupon is already used -->
+    <response code="56" category="C" message="Kupon Tidak Ada"/> <!-- Coupon does not exist. -->
+    <response code="M2" category="C" message="Kupon Tidak Ada"/> <!-- Coupon does not exist. -->
+    <response code="81" category="C" message="Kupon Tidak Sesuai Dengan Aturan Penggunaan"/> <!-- Coupon does not conform the rule of usage -->
+    <response code="M3" category="C" message="Kupon Tidak Sesuai Dengan Aturan Penggunaan"/> <!-- Coupon does not conform the rule of usage -->
+    <response code="M4" category="C" message="Promosi Telah Berakhir"/> <!-- Promotion is end. -->
+    <response code="M5" category="C" message="Kupon Telah Kadaluarsa"/> <!-- Coupon is expired. -->
+</Response>

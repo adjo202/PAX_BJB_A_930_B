@@ -1,0 +1,46 @@
+v.1.0
+
+- Added original bit 7 at void
+22092017
+- Auth comp void done for messaging
+- Auth done for messaging
+25092017
+- Auth void done for messaging
+- Change settlement merchant name into English
+28112017
+- Coupon Sale Done
+- Disable Upload Issuer Script
+- Receipt related Coupon Done
+- Bug Fix at inquiry for void
+- Add Coupon at settlement
+- Removed "Others" Menu
+- Put all informations in field 63 for Coupon Sale
+- Put all informations in field 63 for SN & App Version
+- Added "-" Minus on receipt when doing Void/Cancellation
+- Amount at batch upload still incorrect
+- Bug Fix Amount at Trans Inquiry on COUPON_SALE_VOID type
+- Bug Fix Amount at Detail Inquiry on COUPON_SALE_VOID type
+- Bug Fix Amount on COUPON_VOID_VERIFY
+- Searching function at Inquiry temporary disabled
+
+28122017
+- Change the EDC informations into JSON String at COUPON_SALE & SALE (field 63)
+- Put all informations in field 63 for SN & App Version at ECHO
+- Added Device.getBaseInfo()
+- Default Currency is IDR(360)
+- Set Merchant Chinese Name as same as Merchant English Name when downloading a parameters
+- Print detail and auto logout after settlement has been disabled for default value
+- Search Card for QuikPass temporary disabled
+- Change DEBIT into SALE at settlement screen
+- Change CREDIT into VOID at settlement screen
+- Bug Fixed at COUPON VOID at printing
+
+
+19032019
+- Change IP 182.253.17.251 into 182.253.222.220
+- Bug fixed when download a parameters (field 34 were added)
+
+
+22032019
+- Bug fix (Added field 2 at Sale for swipe)
+- Added field 35 for insert (chip)

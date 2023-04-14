@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorPrimaryBackground"
+              android:orientation="vertical">
+
+    <include layout="@layout/header_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/oper_name"
+                android:textSize="@dimen/font_size_normal" />
+
+            <com.pax.view.CustomEditText
+                android:id="@+id/oper_no"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_frame"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_size_larger" >
+            </com.pax.view.CustomEditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:text="@string/oper_pwd"
+                android:textSize="@dimen/font_size_normal" />
+
+            <com.pax.view.CustomEditText
+                android:id="@+id/oper_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_frame"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:textSize="@dimen/font_size_larger" >
+            </com.pax.view.CustomEditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/oper_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/gray_button_background"
+            android:text="@string/dialog_ok"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_normal" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/keyboard_softnewposstyle" />
+    
+
+
+</LinearLayout>

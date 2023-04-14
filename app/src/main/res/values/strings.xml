@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" tools:ignore="MissingTranslation">
+
+    <string name="app_name">Bank BJB</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="header_title">APPT</string>
+
+    <!-- 初始化设备 -->
+
+
+    <!-- 拔卡 -->
+    <string name="pull_card">Please Pull Card&#8230;</string>
+    <!-- 移卡 -->
+    <string name="remove_card">Please Remove Card&#8230;</string>
+
+    <!-- 终端签到 -->
+    <string name="pos_logon">Logon</string>
+    <string name="pos_terminal_logon">Terminal Logon</string>
+
+    <!-- 终端签退 -->
+    <string name="pos_logout">Logout</string>
+    <string name="pos_lockup">Lockup</string>
+
+    <!-- 消费 -->
+    <string name="sale_trans">Sale</string>
+    <string name="sale_trans_qr">QR Sale</string>
+    <string name="bankcard_pay_insert_sale">Insert Sale</string>
+    <string name="sale_scan">Sale Scan</string>
+    <string name="qr_generate">QR Generate</string>
+    <string name="qr_inquiry">QR Inquiry</string>
+
+
+    <!-- 消费撤销 -->
+    <string name="void_trans">Void</string>
+
+    <!-- 预授权 -->
+    <string name="auth_trans">Pre-Auth</string>
+    <string name="auth_trans_liff">Pre-Auth<xliff:g id="AMOUNT">%1$s</xliff:g></string>
+    <!-- 预授权撤销 -->
+    <string name="auth_void">PreAuth Void</string>
+    <!-- 预授权完成请求 -->
+    <string name="auth_cm">PreAuth Comp</string>
+    <string name="auth_cm_req">PreAuth Comp</string>
+    <!-- 预授权完成通知 -->
+    <string name="auth_cm_adv_all">PreAuth Comp Advise</string>
+    <string name="auth_cm_adv">Comp Advise</string>
+    <!-- 预授权完成撤销 -->
+    <string name="auth_cm_void_all">PreAuth Comp Void</string>
+    <string name="auth_cm_void">Comp Void</string>
+
+    <string name="auth_cmp">Comp</string>
+
+    <!-- 分期 -->
+    <string name="installment_trans">Installment</string>
+    <string name="installment_Sale">Instal Sale</string>
+    <string name="installment_Void">Instal Void</string>
+    <string name="installment_num">Please Input Instal Number</string>
+    <string name="installment_code">Plase Instal Project Code</string>
+    <string name="install">Install</string>
+
+    <!-- 卡号查询 -->
+    <string name="trans_readcard">Card Number Query</string>
+
+    <!-- 离线类交易 -->
+    <string name="offline_trans">Offline</string>
+    <string name="offline_settle">Off-Settle</string>
+    <string name="settle_adjust">Adjust</string>
+    <string name="select_auth_mode">Please Select Auth Mode</string>
+    <string name="input_orig_auth_code">Please Enter Auth Code</string>
+    <string name="input_auth_inst_code">Please Enter Auth Code</string>
+    <string name="input_no_rek">Please Enter No Rekening</string>
+    <string name="select_inter_code">Please Select Auth Mode</string>
+    <string name="auth_mode_pos">POS</string>
+    <string name="auth_mode_phone">Phone</string>
+    <string name="auth_mode_small">Small</string>
+    <string name="settle_adjust_amount_error">
+        Adjust amount must be higher than the orignal amount
+    </string>
+
+
+    <!-- 国际信用卡组织代码 -->
+    <string name="cup">CUP</string>
+    <string name="vis">VIS</string>
+    <string name="mcc">MCC</string>
+    <string name="mae">MAE</string>
+    <string name="jcb">JCB</string>
+    <string name="dcc">DCC</string>
+    <string name="amx">AMX</string>
+
+    <!-- 电子现金 -->
+    <string name="dana">Dana</string>
+    <string name="electronic_cash">E-cash</string>
+    <string name="ec_sale">Sale</string>
+    <string name="ec_load">E-cash Load</string>
+    <string name="ec_cash_balance">Balance Query</string>
+    <string name="ec_balance">Balance</string>
+    <string name="ec_detail">Detail</string>
+    <string name="ec_load_detail">E-cash Load Detail</string>
+    <string name="ec_offline_refund">Offline Refund</string>
+    <string name="ec_trans_liff">E-cash<xliff:g id="AMOUNT">%1$s</xliff:g></string>
+    <string name="ec_commodity">Commodity</string>
+    <string name="ec_cash">Cash</string>
+    <string name="ec_adjust">Adjust</string>
+    <string name="ec_cheque_guarantee">Cheque Guarantee</string>
+    <string name="ec_cheque_verify">Cheque Verify</string>
+    <string name="ec_cheque_europe">Cheque Europe</string>
+    <string name="ec_cheque_travel">Cheque Travel</string>
+    <string name="ec_credit">Credit</string>
+    <string name="ec_giro">Giro</string>
+    <string name="ec_commodity_cash">Commodity Cash</string>
+    <string name="ec_refund">Refund</string>
+    <string name="ec_deposit">Deposit</string>
+    <string name="ec_adjusted">Adjust</string>
+    <string name="ec_cheque_cash_guarantee">Cheque Cash Guarantee</string>
+    <string name="ec_cheque_cash">Cheque Cash</string>
+    <string name="ec_balance_available">Available Balance Query</string>
+    <string name="ec_id_verify">Account Verify</string>
+    <string name="ec_id_transfer">Account Transfer</string>
+
+    <!-- 电子现金明细查询结果 -->
+    <string name="ec_details_query">E-cash Details Query</string>
+    <string name="ic_trans_log">IC Card Transaction Records</string>
+    <string name="ec_log_total_num">Total: <xliff:g id="TOTAL">%1$s</xliff:g> Items </string>
+    <string name="ec_trans_type">Transaction Type:</string>
+    <string name="ec_atc">ATC:</string>
+    <string name="ec_date">Transaction Date:</string>
+    <string name="ec_time">Transaction Time:</string>
+    <string name="ec_trans_amount">Transaction Amount:</string>
+    <string name="ec_other_amount">Other Amount:</string>
+    <string name="ec_country_code">Country Code:</string>
+    <string name="ec_currency_code">Currency Code:</string>
+
+    <!-- 电子现金脱机退货 -->
+    <string name="ec_cash_refund">E-cash Offline Refund</string>
+    <string name="ec_orig_term_id">Original Terminal ID</string>
+    <string name="ec_orig_batch_no">Original Batch NO.</string>
+    <string name="ec_orig_trans_no">Original Trans NO.</string>
+    <string name="ec_orig_date">Original Date</string>
+    <string name="prompt_err_term_id">Terminal ID Less Than 8 Digits,Please Check!</string>
+    <string name="prompt_err_batch_no">Original Batch NO. Can Not Be Empty </string>
+    <string name="prompt_err_trans_no">Original Trans NO. Can Not Be Empty</string>
+
+    <!-- 圈存 -->
+    <string name="qc_cash_charge">E-cash Charge</string>
+    <string name="qc_cash_charge_void">E-cash Charge Void</string>
+    <string name="qc_allocated_account">Allocated Account Load</string>
+    <string name="qc_non_allocated_account">Unallocated Account Load</string>
+    <string name="qc_transfer_out_card">Please Use Transfer Out Card</string>
+    <string name="qc_transfer_in_card">Please Use Transfer In Card(E-cash Card)</string>
+
+    <!-- 圈存日志 -->
+    <string name="ecload_p1">P1:</string>
+    <string name="ecload_p2">P2:</string>
+    <string name="ecload_beforeAmount">E-cash Load Before Amount:</string>
+    <string name="ecload_afterAmount">E-cash Load After Amount:</string>
+    <string name="ecload_date">Date:</string>
+    <string name="ecload_countryCode">Country Code:</string>
+    <string name="ecload_merchName">Merchant Name:</string>
+    <string name="ecload_atc">Transaction Counter:</string>
+
+    <!-- TransType 相关信息 -->
+    <string name="emv_mon_ca">EMV PUK Query</string>
+    <string name="emv_ca_down">EMV PUK Download</string>
+    <string name="emv_ca_down_end">EMV PUK Download End</string>
+    <string name="emv_mon_param">EMV Param Query</string>
+    <string name="emv_pos_status_upload">EMV POS Status Upload</string>
+    <string name="emv_param_down">EMV Param Download</string>
+    <string name="echo">Echo</string>
+    <string name="param_transmit">Param Transmission</string>
+    <string name="emv_param_down_end">EMV Param Download End</string>
+    <string name="black_down">Black Down</string>
+    <string name="black_down_end">Black Down End</string>
+    <string name="rate_down">Rate Download</string>
+    <string name="ic_scr_send">IC Card Script Upload</string>
+    <string name="download_param">Param Download</string>
+    <string name="picc_download_param">PICC Param Download</string>
+    <string name="bin_b_download">BIN B Download</string>
+    <string name="bin_b_download_end">BIN B Download End</string>
+    <string name="bin_c_download">BIN C Download </string>
+    <string name="bin_c_download_end">BIN C Download End</string>
+    <string name="picc_download_param_end">PICC Param Download End</string>
+    <string name="settle">Settlement</string>
+    <string name="batch_up">Batch Upload</string>
+    <string name="batch_up_end">Batch Upload End</string>
+    <string name="offline_trans_send">Offline</string>
+    <string name="sign_send">Last</string>
+    <string name="offline_trans_send_bat">Offline Upload</string>
+
+    <!-- 余额查询 -->
+    <string name="trans_balance">Balance Query</string>
+    <string name="balance_prompt">Balance</string>
+
+    <!-- 交易查询 >>交易汇总 -->
+    <string name="trans_total">Total</string>
+    <string name="trans_query">Trans Inquiry</string>
+    <string name="total_debit">Total Sales</string>
+    <string name="total_credit">Total Refunds</string>
+    <string name="total_counts">Counts</string>
+    <string name="total_amount">Amount</string>
+
+    <!-- 交易查询 >>交易详情 -->
+    <string name="trans_detail">Konfirmasi Transaksi</string>
+    <string name="trans_type">Type</string>
+    <string name="trans_card_no">Card NO.</string>
+    <string name="trans_card_no_or_pay_code">Card NO./Pay Code</string>
+    <string name="trans_amount">Amount</string>
+    <string name="trans_amount_default">%1$s %2$s</string>
+    <string name="trans_oridate">Original Date</string>
+    <string name="detail_auth_code">Auth Code</string>
+    <string name="auth_code">Auth Code:</string>
+    <string name="detail_trans_no">Trace NO.</string>
+    <string name="trans_no">Trace NO.:</string>
+    <string name="detail_trans_ref_no">Reference NO.</string>
+    <string name="trans_ref_no">Reference NO.:</string>
+    <string name="trans_date">Trans Date</string>
+    <string name="trans_time">Trans Time:</string>
+    <string name="date_and_time">Date/Time</string>
+    <string name="trans_state">Trans Status</string>
+    <string name="no_trans_record">No Trans Record</string>
+    <string name="orig_trans_no_exist">Original Trans Not Exist</string>
+    <string name="detail_discount">Discount</string>
+    <string name="detail_cost">Cost</string>
+
+
+    <!-- MO/TO -->
+    <string name="trans_moto">MO/TO</string>
+    <string name="trans_moto_sale">Moto Sale</string>
+    <string name="trans_moto_void">Moto Void</string>
+    <string name="trans_moto_refund">Moto Refund</string>
+    <string name="trans_moto_preauth">Moto PreAuth</string>
+    <string name="trans_moto_preauth_void">Moto PreAuth Void</string>
+    <string name="trans_moto_preauth_comp">Moto PreAuth Comp</string>
+    <string name="trans_moto_preauth_comp_advise">Moto PreAuth Advise</string>
+    <string name="trans_moto_preauth_comp_void">Moto PreAuth CompVoid</string>
+
+    <!-- Recurring -->
+    <string name="trans_recurring">Recurring</string>
+    <string name="trans_recurring_void">Recurring Void</string>
+
+    <!--Coupon-->
+    <string name="trans_coupon">Coupon</string>
+    <string name="coupon_sale">Coupon Sale</string>
+    <string name="coupon_void">Coupon Void</string>
+
+    <!--Mini Banking-->
+    <string name="trans_mini_banking">Mini Banking</string>
+    <string name="trans_fund_transfer">Transfer Dana</string>
+    <string name="trans_transfer">Transfer Antar Bank</string>
+    <string name="trans_balance_information">Informasi Saldo</string>
+    <string name="trans_overbooking_inq">Overbooking</string>
+    <string name="trans_deposit">Setor Tunai</string>
+    <string name="trans_withdrawal">Tarik Tunai</string>
+    <string name="trans_mini_statement">Mini Statement</string>
+    <string name="trans_change_pin">Ganti PIN</string>
+    <string name="trans_opening_account">Pembukaan Rekening</string>
+    <string name="trans_cancelation_account">Pembatalan Rekening</string>
+    <string name="trans_account_list">Daftar Account</string>
+    <string name="trans_overbooking">Overbooking</string>
+    <string name="trans_transfer_sesama">Transfer Antar Rekening</string>
+
+    <string name="antar_bank">Antar Bank</string>
+    <string name="sesama_bank">Antar Rekening</string>
+
+    <!--MENU PPOB-->
+    <string name="trans_ppob">PPOB</string>
+    <string name="trans_pbb">PBB - P2</string>
+    <string name="trans_mpn">MPN - G2</string>
+
+    <string name="trans_esamsat">E-Samsat</string>
+    <string name="trans_pdam">PDAM</string>
+    <string name="trans_prabayar">Prabayar</string>
+    <string name="trans_pascabayar">Pascabayar</string>
+    <string name="trans_download_product">Download Product</string>
+    <string name="trans_cek_status">Cek Status</string>
+    <string name="trans_redeem">Tukar Voucher</string>
+
+
+    <!--Pulsa-->
+    <!--    <string name="trans_over_pulsa_data">Overbooking Pulsa/Data</string>-->
+    <!--    <string name="trans_download_pulsa_and_data">Download Pulsa/Data</string>-->
+    <!--    <string name="trans_inq_pulsa_and_data">Inquiry Pulsa/Data</string>-->
+    <!--    <string name="trans_purchase_pulsa_and_data">Purchase Pulsa/Data</string>-->
+
+    <string name="trans_over_pulsa_data">Overbooking</string>
+    <string name="trans_pulsa_and_data">Pulsa/Data</string>
+    <string name="trans_total_product_pulsa_and_data">Total Product Pulsa/Data</string>
+    <string name="trans_download_pulsa_and_data">Download Product</string>
+
+
+    <!--    <string name="trans_inq_pulsa_and_data">Inquiry</string>-->
+    <string name="trans_inq_pulsa_and_data">Inquiry</string>
+    <string name="trans_purchase_pulsa_and_data">Purchase</string>
+    <string name="trans_operator">Operator</string>
+    <string name="trans_pulsa">Pulsa</string>
+    <string name="trans_data">Data</string>
+    <string name="trans_pln">PLN</string>
+    <string name="trans_other">Lainnya</string>
+    <string name="trans_product_name">Product Name</string>
+    <string name="trans_product_desc">Product Description</string>
+    <string name="trans_product_price">Product Price</string>
+    <string name="trans_reload">Reload</string>
+    <string name="trans_phone_number">Phone Number</string>
+    <string name="trans_phone_number_is_required">Phone Number is required!</string>
+    <string name="input_billing">Billing Id is required!</string>
+    <string name="trans_pulse_sell_price">Price</string>
+    <string name="trans_pulse_admin_fee">Admin Fee</string>
+    <!--    PPOB-->
+    <string name="trans_pbb_p2">PBB-P2</string>
+    <string name="trans_mpn_g2">MPN-G2</string>
+    <string name="trans_djp">Dirjen Pajak (DJP)</string>
+    <string name="trans_djbc">Dirjen Bea dan Cukai (DJBC)</string>
+    <string name="trans_dja">Dirjen Anggaran (DJA)</string>
+    <string name="trans_cetak_ulang">Cetak Ulang</string>
+    <string name="prompt_input_billing">Masukkan Kode Billing</string>
+    <string name="prompt_input_ntb">Masukkan NTB</string>
+
+
+    <!-- Dana -->
+    <string name="qris_trans_qr">Qris Sale</string>
+    <string name="qris_void_trans_qr">Qris Void</string>
+
+    <!--应用列表查询-->
+    <string name="tac_denial">Denial Tac:</string>
+    <string name="tac_online">Online Tac:</string>
+    <string name="tac_default">Default Tac:</string>
+    <string name="ver">Version:</string>
+
+    <!-- 交易状态 -->
+    <string name="normal">Normal</string>
+    <string name="voided">Voided</string>
+    <string name="adjust">Adjusted</string>
+    <string name="upload">Uploaded</string>
+    <string name="un_upload">Not Sent</string>
+
+    <!-- 撤销 -->
+    <string name="trans_void">Void</string>
+    <string name="bank_void">Bank Card Void</string>
+    <string name="scan_code_void">Scan Code Void</string>
+    <string name="prompt_void_last">Click OK to Void Last Transaction</string>
+
+    <!-- 退货 -->
+    <string name="trans_refund">Refund</string>
+    <string name="bank_refund">Bank Card Refund</string>
+    <string name="scan_code_refund">Scan Code Refund</string>
+
+    <!-- 结算 -->
+    <string name="trans_settle">Settlement</string>
+    <string name="trans_settle_total">Total Settlement</string>
+    <string name="merchant_name">Merchant Name</string>
+    <string name="merchant_id">Merchant NO.</string>
+    <string name="terminal_id">Terminal NO.</string>
+    <string name="batch_id">Batch NO.</string>
+    <string name="type">TYPE</string>
+    <string name="sum">SUM</string>
+    <string name="amount">AMOUNT</string>
+    <string name="inner_debit">SALE</string>
+    <string name="inner_credit">VOID</string>
+    <string name="outer_debit">DEBIT(OUTER CARD)</string>
+    <string name="outer_credit">CREDIT(OUTER CARD)</string>
+    <string name="total">TOTAL</string>
+    <string name="print_settle_detail_or_not">Print Settle Detail Or Not?</string>
+    <string name="print_fail_detail_or_not">Print Fail Detail Or Not?</string>
+
+    <!-- 操作员签到 -->
+    <string name="oper_login">Operator Login</string>
+    <string name="oper_logon">Operator Logon</string>
+    <string name="oper_name">Operator Name</string>
+    <string name="oper_pwd">Operator Password</string>
+    <string name="oper_is_not_exist">Operator Not Existed</string>
+    <string name="oper_pwd_is_err">Operator Password Error</string>
+    <string name="oper_pwd_hint">Password(4 Digits)</string>
+
+    <!-- 操作员管理 -->
+    <string name="oper_manage">Operator</string>
+    <string name="query_oper">Operator Query</string>
+    <string name="add_oper">Operator Add</string>
+    <string name="delete_oper">Operator Delete</string>
+    <string name="modify_oper_pwd">Operator Password Modify</string>
+    <string name="modify_manger_pwd">Supervisor Password Modify</string>
+    <string name="manager_oper_id">Operator ID Management</string>
+    <string name="manager_oper_name">Operator Name Management</string>
+    <string name="manager_oper_id1">Operator ID(2 Digits,eg. 01)</string>
+    <string name="manager_oper_name1">Operator Name(Optional)</string>
+    <string name="manager_oper_psw">Password(4 Digits)</string>
+    <string name="manager_oper_name1_hint">Optional</string>
+    <string name="manager_oper_id2">Operator ID</string>
+    <string name="manager_oper_name2">Operator Name</string>
+    <string name="manager_oper_psw1">Operator Password</string>
+    <string name="oper_exist">Operator Already Existed</string>
+    <string name="add_oper_not_allow">The Operator Not Allowed to Be Added</string>
+    <string name="add_success_end">Add Operator Success</string>
+    <string name="add_success_continue">Continue to Add?</string>
+    <string name="add_failure_end">Add Operator Fail!</string>
+    <string name="delete_succ">Delete Success!</string>
+    <string name="delete_fail">Delete Fail!</string>
+    <string name="please_choose_delete_oper">Please Choose the Operator to Delete</string>
+    <string name="please_input_new_pwd">New Password</string>
+    <string name="psw_is_not_equal">Not Matched, Please Enter Again</string>
+    <string name="please_reinput_new_pwd">Verify New Password</string>
+    <string name="please_enter_four_num">Request 4 Digits</string>
+    <string name="passwd_revise_succ">Password Revise Success!</string>
+    <string name="please_enter_six_num">Request 6 Digits</string>
+
+    <!-- 签退 -->
+    <string name="trans_logout">Logout</string>
+
+    <!-- 签名 -->
+    <string name="signature">Signature</string>
+    <string name="clear_sign">Clear</string>
+    <string name="finish_sign">Enter</string>
+    <string name="trans_amount_info">Transaction Amount: <xliff:g id="AMOUNT">%1$s</xliff:g></string>
+    <string name="pls_re_signature">Signature Data Is Too Long,Please Re-sign</string>
+    <string name="sign_on_extend_pad">Please Sign on Extend Pad</string>
+
+    <!-- 打印 -->
+    <string name="trans_print">Print</string>
+    <string name="trans_reprint">Reprint</string>
+    <string name="print_trans_last">Print Last</string>
+    <string name="print_trans_detail">Print Detail</string>
+    <string name="print_trans_total">Print Summary</string>
+    <string name="print_last_total">Print Last Settle</string>
+    <string name="trans_detail_list">TRANS DETAIL</string>
+    <string name="settle_detail_list">Settle Detail List</string>
+    <string name="trans_total_list">TRANS TOTAL</string>
+    <string name="trans_last_total_list">Last Transaction Total List</string>
+    <string name="offline_trans_send_failed">Failed Offline Send Detail List</string>
+    <string name="transfer_in_card_num">Transfer in Card NO.:</string>
+
+    <!-- 扫码支付 -->
+    <string name="scan_pay_code">Pay Code</string>
+    <string name="scan_pay_codes">Pay Code</string>
+    <string name="pay_voucher_num">Pay Voucher NO.</string>
+    <string name="orig_pay_voucher_num">Original Pay Voucher NO.</string>
+
+    <!-- 银行卡支付 -->
+    <string name="prompt_external_ped">Please Use External PIN Pad</string>
+
+    <!-- 闪付、云闪付 -->
+    <string name="amount_default">0</string>
+    <string name="prompt_trans_amount">Transaction Amount</string>
+
+    <!-- 管理 -->
+    <string name="manage">Management</string>
+
+    <!-- 其他 -->
+    <string name="app_others">Others</string>
+
+    <!-- 闪付凭密 -->
+    <string name="quick_pass_by_pin">Quick Pass by PIN</string>
+    <string name="quick_pass_sale_force_pin">Sale by PIN</string>
+    <string name="quick_pass_auth_force_pin">Auth by PIN</string>
+
+    <!-- InputPwdDialog相关提示信息 -->
+    <string name="prompt_director_pwd">Please Enter Supervisor Password</string>
+    <string name="prompt_sys_pwd">Please Enter System Administrator Password</string>
+    <string name="prompt_bankcard_pwd">Silahkan Masukkan PIN Anda</string>
+    <string name="prompt_no_password">No password, Please Click OK</string>
+    <string name="prompt_offline_pwd">Please Enter Offline Password</string>
+
+    <!-- SearchCardActivity 刷卡、插卡、挥卡、手刷 -->
+    <string name="prompt_insert_swipe_put_card">Please Swipe Card/Insert Card/Wave Card</string>
+    <string name="prompt_swipe_failed_please_retry">Read Card Failed, Please Retry</string>
+    <string name="prompt_ic_card_input">The Card Is IC Card, Please Insert Card!</string>
+    <string name="prompt_wave_card">Please Wave Card</string>
+    <string name="prompt_card_date">Card Date</string>
+    <string name="prompt_card_num">Card No.</string>
+    <string name="prompt_card_date_err">Date Format Error, Please Check!</string>
+    <string name="prompt_card_num_err">Card Number Error, Please Check!</string>
+    <string name="prompt_card_num_manual">Please Enter Card Number</string>
+    <string name="prompt_date_default">MM/YY</string>
+    <string name="prompt_default_serchcard_prompt">Please Use Your Bank Card</string>
+
+    <!-- InfosInputActivity 相关信息 -->
+    <string name="prompt_input_transno">Masukan nomor STAN</string>
+    <string name="prompt_input_certificate">Please Enter Or Scan Certificate Code</string>
+    <string name="prompt_input_orig_refer">Original Refer NO.</string>
+    <string name="prompt_input_amount">Amount:</string>
+    <string name="prompt_input_refund_amount">Refund Amount:</string>
+    <string name="prompt_input_scancode_refund_amount">Scan Code Refund Amount:</string>
+    <string name="prompt_input_tip_amount">Tip Amount:</string>
+    <string name="prompt_input_adjust_amount">Adjust Amount:</string>
+    <string name="prompt_input_auth_code">Auth Code</string>
+    <string name="prompt_input_date">Original Date</string>
+    <string name="prompt_input_cvn2">CVN2</string>
+    <string name="please_input_again">Please Enter Again</string>
+    <string name="date_default">MM/DD</string>
+    <string name="prompt_input_coupon">Please input coupon number</string>
+    <string name="prompt_input_id">ID Pembukaan Rekening :</string>
+
+
+    <!-- CustomAlertDialog提示信息 -->
+    <string name="start_scan">Start Scan</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel_save">Cancel Save</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="process_please_wait">Processing, Please Wait&#8230;</string>
+    <string name="trans_succ">Transaction Success</string>
+    <string name="trans_succ_liff"><xliff:g id="SUCCESS">%1$s</xliff:g> Success</string>
+    <string name="err_timeout">Timeout</string>
+    <string name="err_connect">Connect Error</string>
+    <string name="err_send">Send Error</string>
+    <string name="err_recv">Receive Error</string>
+    <string name="err_pack">Pack Error</string>
+    <string name="err_unpack">Unpack Error</string>
+    <string name="err_bag">Illegal Packet</string>
+    <string name="err_mac">Unpack MAC Error</string>
+    <string name="err_proc_code">Unpack Precess Code Error</string>
+    <string name="err_msg">Unpack Message Type Code Error</string>
+    <string name="err_trans_amt">Unpack Amount Error</string>
+    <string name="err_trace_no">Unpack Serial NO. Error</string>
+    <string name="err_term_id">Unpack Terminal ID Error</string>
+    <string name="err_merch_id">Unpack Merchant ID Error</string>
+    <string name="err_no_trans">No Transaction</string>
+    <string name="err_no_valid_trans">No Valid Transaction</string>
+    <string name="err_no_orig_trans">Original Transaction Not Existed</string>
+    <string name="err_twk_length">TMK Length Error</string>
+    <string name="err_has_void">Transaction Has Been Voided</string>
+    <string name="err_void_unsupport">Transaction cannot be Voided</string>
+    <string name="err_comm_channel">Open Communication Channel Error</string>
+    <string name="err_host_reject">Host Reject</string>
+    <string name="err_not_logon">Terminal Not Logon,\n Please Logo First</string>
+    <string name="err_need_settle_now">Transaction Number Exceed,\nPlease Settle Now</string>
+    <string name="err_need_settle_later">Transaction Number Exceed,\nPlease Settle Later</string>
+    <string name="err_no_free_space">No Free Space,\nPlease Settle Now</string>
+    <string name="err_not_support_trans">Unsupported Transaction</string>
+    <string name="err_batch_up_break_need_continue">Last Batch Up Break,\Please Click Settle Continue</string>
+    <string name="err_undefine">Undefined Error</string>
+    <string name="err_undefine_info">Undefined</string>
+    <string name="err_original_cardno">Cannot Match the Original Card NO.</string>
+    <string name="err_manager_password">Supervision Password Error</string>
+    <string name="err_password">Wrong Password!</string>
+    <string name="err_param">Parameter Error</string>
+    <string name="err_amount">Amount Exceed</string>
+    <string name="err_card_denied">Host Approval,Card Denied\nPlease Contact Issuer</string>
+    <string name="err_card_unsupport_demotion">Demotion is Unsupported</string>
+    <string name="err_card_bin">Card BIN format Error</string>
+    <string name="err_response">Server Respond error!</string>
+    <string name="err_tmk_kcv">TMK KCV Error!</string>
+    <string name="err_write_rsa_puk">Write RSA PUK to PED Error!</string>
+    <string name="err_write_to_ped">Write TMK to PED Error!</string>
+    <string name="trans_record_no_exist">No Transaction Record</string>
+    <string name="print_wait">Printing, Please Wait&#8230;</string>
+    <string name="print_paper">Out of Paper&#8230;</string>
+    <string name="print_hot">Printer Overheat, Please Wait&#8230;</string>
+    <string name="print_voltage">Printer Voltage is Too Low</string>
+    <string name="wait_initialize_net">Initialize Net&#8230;</string>
+    <string name="wait_process">Processing, Please Wait&#8230;</string>
+    <string name="wait_connect">Connecting, Please Wait&#8230;</string>
+    <string name="wait_dail">Dialing, Please Wait&#8230;</string>
+    <string name="wait_connect_other">Backup Host Connecting,Please Wait&#8230;</string>
+    <string name="wait_send">Sending, Please Wait&#8230;</string>
+    <string name="wait_recv">Receiving, Please Wait&#8230;</string>
+    <string name="err_password_print">Password Error,Please Enter Again</string>
+    <string name="reverse_prompt">Reverse</string>
+    <string name="reverse_err">Reverse Error, Please Contact Issuer</string>
+    <string name="emv_err_code">Error Code:</string>
+    <string name="emv_err_info">\n</string>
+    <string name="set_prompt">Prompt</string>
+    <string name="set_settle">Have Transaction,Please Settle Now</string>
+    <string name="set_print_password">Please Enter Security Password</string>
+    <string name="set_err_password">Password Error</string>
+    <string name="err_adjust_unsupport">Transaction cannot be Adjusted</string>
+    <string name="prompt_ex_signature">Please Use External Signature Pad</string>
+    <string name="prompt_ex_scan_code_device">Please Use External Scanner</string>
+    <string name="prompt_amount_over_limit">Tip amount over limit</string>
+    <string name="err_clss_preproc_fail">Clss PreProc Fail</string>
+    <string name="err_invalid_qr">Invalid QR Code</string>
+    <string name="err_coupon_num">Invalid Coupon</string>
+
+    <string name="err_invalid_data">Invalid Data Response</string>
+
+    <!--应用列表查询-->
+    <string name="no_app">No App</string>
+
+    <!-- 电子签名上送 -->
+    <string name="sign_upload_failed">Sign Upload Failed</string>
+    <string name="sign_recv_failed">Receiving Error, Sign Upload Failed</string>
+
+    <!-- 软件版本号 -->
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    <string name="app_version">Software Version NO.</string>
+
+    <!-- MainActivity 提示信息 -->
+
+    <!--应用列表查询-->
+    <string name="fall_back_treatment">IC Card Fallback Treatment</string>
+
+    <!-- EMV 相关信息 -->
+    <string name="emv_cardno_confirm">Card NO. Confirm</string>
+    <string name="emv_err_auth_trans_can_not_use_pure_card">Auth Transaction Can Not Use Pure E-cash</string>
+    <string name="emv_err_pure_card_can_not_online">Pure E-cash Can Not Online</string>
+    <string name="emv_application_choose">APP Choose</string>
+    <string name="emv_application_choose_again">APP Choose[Choose Again]</string>
+    <string name="emv_input_last">Last</string>
+    <string name="emv_arrival_card">Arrival Card</string>
+    <string name="emv_identity_card">Identity Card</string>
+    <string name="emv_officers_card">Officers Card</string>
+    <string name="emv_other_card">Other Card</string>
+    <string name="emv_passport">Passport</string>
+    <string name="emv_interim_identity_card">Interim Identity Card</string>
+    <string name="emv_card_in_black_list">Card in Black list</string>
+    <!-- Printer 相关信息(因为海外银联不区分内卡和外卡，以下内容可能会被删除)-->
+    <string name="print_inside_card_check">DOMESTIC CARD RECONCILIATION BALANCED</string>
+    <string name="print_inside_card_check_uneven">DOMESTIC CARD RECONCILIATION UNBALANCED</string>
+    <string name="print_inside_card_check_err">DOMESTIC CARD RECONCILIATION ERROR</string>
+    <string name="print_outside_card_check">FOREIGN CARD RECONCILIATION BALANCED</string>
+    <string name="print_outside_card_check_uneven">FOREIGN CARD RECONCILIATION UNBALANCED</string>
+    <string name="print_outside_card_check_err">FOREIGN CARD RECONCILIATION ERROR</string>
+
+    <!-- Printer -->
+    <string name="print_card_check">Check</string>
+    <string name="print_card_check_uneven">Check Uneven</string>
+    <string name="print_card_check_err">Check Error</string>
+
+    <!-- Receipt 相关信息 -->
+    <string name="receipt_merchant_name">MERCHANT NAME:</string>
+    <string name="receipt_merchant_code">MERCHANT ID:</string>
+    <string name="receipt_terminal_code">TERMINAL ID:</string>
+    <string name="receipt_terminal_code_space">TERMINAL ID:</string>
+    <string name="receipt_oper_id">OPERATOR ID.</string>
+    <string name="receipt_oper_id_space">OPERATOR:</string>
+    <string name="receipt_batch_num">BATCH NO.</string>
+    <string name="receipt_batch_num_colon">BATCH NO:</string>
+    <string name="receipt_batch_num_space">BATCH NO:</string>
+    <string name="receipt_date">DATA/TIME:</string>
+    <string name="receipt_failed_trans_details">UNSUCCESSSFUL LIST</string>
+    <string name="receipt_rejuct_trans_details">DENIED LIST</string>
+    <string name="receipt_type">TYPE</string>
+    <string name="receipt_count">NUM</string>
+    <string name="receipt_amount">AMOUNT</string>
+    <string name="receipt_trans_type_sale">SALE</string>
+    <string name="receipt_trans_type_tips">TIPS</string>
+    <string name="receipt_trans_type_refund">REFUND</string>
+    <string name="receipt_trans_type_comp">COMP</string>
+    <string name="receipt_trans_type_offline">OFFLINE</string>
+    <string name="receipt_trans_type_install">INSTALL</string>
+    <string name="receipt_trans_type_coupon">COUPON</string>
+    <string name="receipt_card_no">CARD NO. </string>
+    <string name="receipt_trans_type">TRANS. TYPE</string>
+    <string name="receipt_trans_no">TRACE NO.</string>
+    <string name="receipt_no_kartu">No Kartu</string>
+    <string name="receipt_no_rek">No Rekening</string>
+    <string name="receipt_card_date">EXP. DATE</string>
+    <string name="receipt_card_issue">ISSUER</string>
+    <string name="receipt_auth_code">AUTH CODE</string>
+    <string name="receipt_card_acquire">ACQUIRER</string>
+    <string name="receipt_ref_no">REF. NO.</string>
+    <string name="receipt_card_organization">CARD ORGANIZATION CODE:</string>
+    <string name="receipt_comment">COMMENT:</string>
+    <string name="receipt_orig_trans_no">ORIGINAL TRANS NO.:</string>
+    <string name="receipt_orig_date">ORIGINAL TRANS DATE:</string>
+    <string name="receipt_orig_auth_code">ORIGINAL AUTH CODE:</string>
+    <string name="receipt_orig_ref_no">ORIGINAL REFERENCE CODE:</string>
+    <string name="receipt_orig_term_id">ORIGINAL TERMINAL ID:</string>
+    <string name="receipt_orig_batch_no">ORIGINAL BATCH NO.:</string>
+    <string name="receipt_print_agian">DUPLICATED</string>
+    <string name="receipt_had_void">HAD VOID</string>
+    <string name="receipt_ec_balance">E-CASH BALANCE:</string>
+    <string name="receipt_amount_prompt_start">TRANSACTION AMOUNT NOT EXCEED</string>
+    <string name="receipt_amount_prompt_end">,NO NEED TO ENCRYPT OR SIGN</string>
+    <string name="receipt_amount_prompt_end_sign">,NO NEED TO SIGN</string>
+    <string name="receipt_amount_prompt_end_password">,NO NEED TO ENTER PIN</string>
+    <string name="receipt_no_sign">E-CASH NO NEED TO SIGN</string>
+    <string name="receipt_sign">CARDHOLDER SIGNATURE:</string>
+    <string name="code_receipt_sign">Signing free for QR trans</string>
+    <string name="receipt_verify">I ACKNOWLEDGE SATISFACTORY RECEIPT OF RELATIVE GOODS/SERVICE</string>
+    <string name="receipt_stub_acquire">BANK COPY</string>
+    <string name="receipt_stub_merchant">MERCHANT COPY</string>
+    <string name="receipt_stub_user">CUSTOMER COPY</string>
+    <string name="receipt_amount_sale">AMOUNT</string>
+    <string name="receipt_amount_tip">TIPS</string>
+    <string name="receipt_amount_total">TOTAL</string>
+    <string name="receipt_cash_refund">E-CASH REFUND</string>
+    <string name="receipt_en_merchant_name">"MERCHANT NAME:&#160;"</string>
+    <string name="receipt_en_merchant_code">MID: </string>
+    <string name="receipt_en_terminal_code_space">TID: </string>
+    <string name="receipt_en_oper_id_space">OPERATOR:&#160;</string>
+    <string name="receipt_en_date">DATE/TIME:&#160;</string>
+    <string name="receipt_en_amount">AMOUNT:&#160;</string>
+    <string name="receipt_en_amount_sale">AMOUNT:&#160;</string>
+    <string name="receipt_en_amount_tip">TIPS:&#160;</string>
+    <string name="receipt_en_amount_total">TOTAL:&#160;</string>
+    <string name="receipt_en_amount_billing">BILLING AMOUNT:&#160;</string>
+    <string name="receipt_en_num_installment">PLAN:&#160;</string>
+    <string name="receipt_en_code_installment">CODE:&#160;</string>
+    <string name="receipt_en_payment_installment">1ST PAYMENT:&#160;</string>
+    <string name="receipt_en_service_fee_installment">SERVICE FEE:&#160;</string>
+    <string name="receipt_en_trans_type">TRANS TYPE:&#160;</string>
+    <string name="receipt_en_card_no">CARD NO: </string>
+    <string name="receipt_en_batch_num_colon">BATCH NO:&#160;</string>
+    <string name="receipt_en_trans_no">TRACE NO:&#160;</string>
+    <string name="receipt_en_auth_code">AUTH NO:&#160;</string>
+    <string name="receipt_en_card_date">EXP. DATE:&#160;</string>
+    <string name="receipt_en_card_issue">ISSUER:&#160;</string>
+    <string name="receipt_en_card_acquire">ACQUIRER:&#160;</string>
+    <string name="receipt_en_card_organization">WILDCARD ORG.:&#160;</string>
+    <string name="receipt_en_ref_no">REFER NO:&#160;</string>
+    <string name="receipt_en_comment">REFERENCE</string>
+    <string name="receipt_en_sign">CARD HOLDER SIGNATURE</string>
+    <string name="receipt_en_verify">I ACKNOWLEDGE SATISFACTORY RECEIPT OF RELATIVE GOODS/SERVICE</string>
+    <string name="scan_en_pay_code">PAY CODE NUMBER:&#160;</string>
+    <string name="receipt_coupon_no">COUPON ID: </string>
+    <string name="receipt_coupon_discount">DISCOUNT: </string>
+    <string name="receipt_actual_pay">COST: </string>
+    <string name="receipt_exchange_rate">EXCHANGE RATE: </string>
+    <string name="dividing_line">--------------------------------</string>
+
+    <!-- Settings 相关信息 -->
+    <string name="set_cancle_save">Cancel Save</string>
+    <string name="set_recv">Receiving&#8230;</string>
+    <string name="set_key_success">Import Key Success</string>
+    <string name="set_key_fail">Import Key Fail</string>
+
+    <!-- 银行 -->
+    <string name="icbc">ICBC</string>
+    <string name="icbc_cup">ICBC</string>
+    <string name="abc">ABC</string>
+    <string name="abc_cup">ABC CUP</string>
+    <string name="boc">BOC</string>
+    <string name="boc_cup">BOC CUP</string>
+    <string name="cbc">CBC</string>
+    <string name="cbc_cup">CBC CUP</string>
+    <string name="psbc">PSBC</string>
+    <string name="psbc_cup">PSBC CUP</string>
+    <string name="bcm">BCM</string>
+    <string name="bcm_cup">BCM</string>
+    <string name="ccb">CCB</string>
+    <string name="ccb_cup">CCB</string>
+    <string name="ceb">CEB</string>
+    <string name="ceb_cup">CEB</string>
+    <string name="hxb">HXB</string>
+    <string name="hxb_cup">HXB</string>
+    <string name="cmbc">CMBC</string>
+    <string name="cmbc_cup">CMBC CUP</string>
+    <string name="gdb">GDB</string>
+    <string name="gdb_cup">GDB</string>
+    <string name="sdb">SDB</string>
+    <string name="sdb_cup">SDB CUP</string>
+    <string name="cmb">CMB</string>
+    <string name="cmb_cup">CMB CUP</string>
+    <string name="cib">CMB</string>
+    <string name="cib_cup">CIB CUP</string>
+    <string name="spdb">SPDB</string>
+    <string name="spdb_cup">SPDB CUP</string>
+    <string name="ums">UMS</string>
+    <string name="ums_cup">UMS CUP</string>
+    <string name="commercial_bank">COMMERCIAL BANK</string>
+
+    <!-- 退出应用 -->
+    <string name="please_install_neptune">Please Install Neptune</string>
+    <string name="exit_app">Exit Current APP?</string>
+    <string name="param_need_upate_please_settle">Parameter Need Update, Please Settle!</string>
+    <string name="app_need_update_please_settle">APP Need Update, Please Settle!</string>
+    <string name="app_crash_exit">App Is Abnormal, Will Exit!</string>
+
+    <!-- image workaround -->
+    <string name="image_desc"> </string>
+    <string name="unlock_hint">Slide up to Unlock</string>
+
+    <!--TMK下载相关-->
+    <string name="keymanage_menu_tmk_download">Download TMK</string>
+    <string name="keymanage_menu_download_tmk_from_server">Download from Server</string>
+    <string name="pos_rsakey_down">Download RSA PUK</string>
+    <string name="pos_tmk_down">Download TMK</string>
+    <string name="pos_activate_tmk">Activate TMK</string>
+
+
+    <!-- DANA -->
+    <string name="txt_scan">Scan</string>
+    <string name="txt_generate">Generate</string>
+
+    <!--add abdul-->
+    <string name="detail_no_rek">Nomor Rekening</string>
+    <string name="detail_dari_rek">Dari Rekening</string>
+    <string name="detail_nilai_penarikan">Nilai Penarikan</string>
+    <string name="detail_nm_penerima">Nama Penerima</string>
+    <string name="detail_jml_setor">Jumlah Setor</string>
+    <string name="detail_jml_tarik">Jumlah Penarikan</string>
+    <string name="detail_jml_saldo">Jumlah Saldo</string>
+    <string name="detail_rek_asal">No. Rekening Asal</string>
+    <string name="detail_nm_rek_asal">Nama Rek. Asal</string>
+    <string name="detail_no_rek_tujuan">Nomor Rekening</string>
+    <string name="detail_nm_rek_tujuan">Nomor Rekening</string>
+    <string name="detail_jml_transfer">Jumlah Transfer</string>
+    <string name="detail_admin">Biaya Admin</string>
+    <string name="detail_saldo">Saldo</string>
+    <string name="detail_total">Total</string>
+    <string name="detail_referensi">Nomor Referensi</string>
+
+    <string name="detail_nama">Nama</string>
+    <string name="detail_nik">Nomor Identitas</string>
+    <string name="detail_t_l">Tempat Lahir</string>
+    <string name="detail_tgl_l">Tanggal Lahir</string>
+    <string name="detail_no_hp">No. Handphone</string>
+    <string name="detail_nominal">Nominal Setoran</string>
+
+    <string name="detail_bank_tujuan">Bank Tujuan</string>
+    <string name="detail_biaya_admin">Biaya Admin</string>
+    <string name="detail_norek_tujuan">No. Rekening Tujuan</string>
+    <string name="detail_nama_rek_tujuan">Nama Penerima</string>
+    <string name="detail_nominal_tf">Nominal Transfer</string>
+    <string name="bank">Bank Tujuan</string>
+
+    <!--E-samsat-->
+    <string name="esamsat_kode_bayar">Kode Bayar</string>
+    <string name="esamsat_nama_pemilik">Nama Pemilik</string>
+    <string name="esamsat_no_pol">Nomor Polisi</string>
+    <string name="esamsat_jenis_kendaraan">Jenis Kendaraan</string>
+    <string name="esamsat_tahun_pembuatan">Tahun Pembuatan</string>
+
+
+    <!--MPN-->
+    <string name="detail_kode_billing">Kode Billing</string>
+    <string name="detail_kode_npwp">NPWP</string>
+    <string name="detail_masa_pajak">Masa Pajak</string>
+    <string name="detail_nop">NOP</string>
+    <string name="detail_jenis_setoran">Jenis Setoran</string>
+    <string name="detail_jumlah_bayar">Jumlah Bayar</string>
+
+    <string name="detail_jenis_dok">Jenis Dokumen</string>
+    <string name="detail_tgl_dok">Tanggal Dokumen</string>
+    <string name="detail_kppbc">Kode KPPBC</string>
+
+    <string name="detail_lembaga">Lembaga</string>
+    <string name="detail_eselon">Eselon</string>
+    <string name="detail_satker">Kode Satker</string>
+
+    <!--BPJS Ketenagakerjaan-->
+    <string name="detail_bpjs_tk">BPJS Ketenagakerjaan</string>
+    <string name="detail_bpjs_tk_pendaftaran">BPJS Ketenagakerjaan Pendaftaran</string>
+    <string name="detail_bpjs_tk_pembayaran">BPJS Ketenagakerjaan Pembayaran</string>
+    <string name="detail_bpjs_tk_inquiry">BPJS Ketenagakerjaan Cek Tagihan</string>
+    <string name="detail_bpjs_tk_verification">BPJS Ketenagakerjaan Verification</string>
+    <string name="detail_bpjs_tk_update_data">Update Data</string>
+
+
+    <string name="detail_bpjs_pendaftaran">Pendaftaran</string>
+    <string name="detail_bpjs_pembayaran">Pembayaran</string>
+    <string name="detail_bpjs_download">Download Parameter</string>
+    <string name="prompt_input_bpjs_tk_nik">NIK</string>
+    <string name="trans_bpjs_tk">BPJS Tk</string>
+    <string name="trans_bpjs_location">BPJS Location Data</string>
+    <string name="trans_bpjs_branch_office">BPJS Branch Offices Data</string>
+    <string name="trans_bpjs_district_data">BPJS District Data</string>
+
+    <string name="trans_bpjs_location_text_only">Lokasi</string>
+    <string name="trans_bpjs_branch_office_text_only">Kantor Cabang</string>
+    <string name="trans_bpjs_district_data_text_only">Kabupaten Kota</string>
+    <string name="trans_calculating">Calculating..</string>
+
+
+
+
+
+</resources>

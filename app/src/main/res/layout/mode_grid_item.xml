@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/mode_grid_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_normal" />
+
+    <TextView
+        android:id="@+id/mode_grid_tv_additional"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="bottom|center"
+        android:textSize="@dimen/font_size_smallest" />
+
+
+
+
+</RelativeLayout>

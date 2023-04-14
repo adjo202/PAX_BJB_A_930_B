@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryBackground"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:text="@string/ec_orig_term_id"
+                android:textColor="@color/textview_infos"
+                android:textSize="@dimen/font_size_normal" />
+
+            <com.pax.view.CustomEditText
+                android:id="@+id/ec_orig_term_id"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="28dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginStart="30dp"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:textSize="@dimen/font_size_normal" />
+
+            <Button
+                android:id="@+id/edit_system_keyboard"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:background="@drawable/prompt_keybroad" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="11dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:text="@string/ec_orig_batch_no"
+                android:textColor="@color/textview_infos"
+                android:textSize="@dimen/font_size_normal" />
+
+            <com.pax.view.CustomEditText
+                android:id="@+id/ec_orig_batch_no"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="28dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="28dp"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textSize="@dimen/font_size_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="11dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:text="@string/ec_orig_trans_no"
+                android:textColor="@color/textview_infos"
+                android:textSize="@dimen/font_size_normal" />
+
+            <com.pax.view.CustomEditText
+                android:id="@+id/ec_orig_trans_no"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="28dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="28dp"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textSize="@dimen/font_size_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="11dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:text="@string/ec_orig_date"
+                android:textColor="@color/textview_infos"
+                android:textSize="@dimen/font_size_normal" />
+
+            <com.pax.view.CustomEditText
+                android:id="@+id/ec_orig_date"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="28dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="28dp"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:hint="@string/date_default"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:textSize="@dimen/font_size_normal" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/infos_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="51dp"
+            android:background="@drawable/gray_button_background"
+            android:text="@string/dialog_ok"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_normal" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/keyboard_softnewposstyle" />
+
+</RelativeLayout>

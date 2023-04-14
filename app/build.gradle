@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+
+def static releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+def loadSigningConfigs() {
+    def Properties props = new Properties()
+    def propFile = file('../signing.properties')
+    if (propFile.canRead()) {
+        props.load(new FileInputStream(propFile))
+        if (props != null && props.containsKey('RELEASE_STORE_FILE') && props.containsKey('RELEASE_STORE_PASSWORD') &&
+                props.containsKey('RELEASE_KEY_ALIAS') && props.containsKey('RELEASE_KEY_PASSWORD')) {
+            android.signingConfigs.release.storeFile = file(props['RELEASE_STORE_FILE'])
+            android.signingConfigs.release.storePassword = props['RELEASE_STORE_PASSWORD']
+            android.signingConfigs.release.keyAlias = props['RELEASE_KEY_ALIAS']
+            android.signingConfigs.release.keyPassword = props['RELEASE_KEY_PASSWORD']
+        } else {
+            android.buildTypes.release.signingConfig = null
+        }
+    } else {
+        android.buildTypes.release.signingConfig = null
+    }
+}
+
+android {
+    compileSdkVersion 25
+    //buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.pax.up.bjb"
+        minSdkVersion 19
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 25
+        versionCode 24
+        versionName "V2.0.9_"+releaseTime()
+    }
+
+    signingConfigs {
+        debug {
+        }
+        release {
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            crunchPngs false
+            loadSigningConfigs()
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            loadSigningConfigs()
+            //签名
+            signingConfig signingConfigs.release
+
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    if (outputFileName != null && outputFile.name.endsWith('.apk')) {
+                        def type = ""
+                        if (variant.buildType.name == 'debug') {
+                            type = "_debug"
+                        }
+                        def fileName = "PAXBJB_${defaultConfig.versionName}${type}.apk"
+                        outputFileName = fileName
+                    }
+                }
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'cn.bingoogolapple:bga-banner:2.1.7'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'org.slf4j:slf4j-android:1.6.1-RC1'
+    implementation 'com.android.support:support-v4:25.1.1'
+    implementation 'com.android.support:appcompat-v7:25.+'
+    implementation 'com.android.support:recyclerview-v7:25.+'
+    implementation fileTree(include: '*.jar', dir: 'libs')
+    implementation files('libs/PaxNeptuneLiteApi_V2.01.00_20171025.jar')
+    /*implementation files('libs/PaxGLPacker_V1.00.07_20170808.jar')*/
+
+    //Sandy : need to migrate into compileSdkVersion 28
+    //implementation 'com.google.android.gms:play-services-location:20.0.0'
+
+    //Sandy : threadpool
+    //implementation 'com.zsoltsafrany:needle:1.0.0'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    api project(path: ':eemv')
+    implementation files('libs/paxstore-sdk-java-4.0.0-20170810.jar')
+    implementation 'com.github.MdFarhanRaja:SearchableSpinner:2.0'
+}

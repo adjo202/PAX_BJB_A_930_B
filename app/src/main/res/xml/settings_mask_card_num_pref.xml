@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_sale_mask_card_no"
+        android:layout="@layout/prefs_list_s_item"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/systemPara_sale_mask_card_number"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_preauth_mask_card_no"
+        android:layout="@layout/prefs_list_s_item"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/systemPara_preauth_mask_card_number"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_ecash_mask_card_no"
+        android:layout="@layout/prefs_list_s_item"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/systemPara_ecash_mask_card_number"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+</PreferenceScreen>

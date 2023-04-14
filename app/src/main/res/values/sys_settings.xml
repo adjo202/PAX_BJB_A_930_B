@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+
+    <!-- 系统设置 -->
+    <string name="settings_title">Setting</string>
+    <string name="settings_menu_merchant_parameter">Merchant</string>
+    <string name="settings_menu_trade_manage">Transaction</string>
+    <string name="settings_menu_system_parameter">System</string>
+    <string name="settings_menu_communication_parameter">Communication</string>
+    <string name="settings_menu_key_manage">Key</string>
+    <string name="settings_menu_passwd_manage">Password</string>
+    <string name="settings_menu_currency_manage">Currency</string>
+    <string name="settings_menu_other_manage">Other</string>
+
+    <!-- 商户参数 -->
+    <string name="merchant_number">Merchant Number(15 Digits):</string>
+    <string name="terminal_number">Terminal(8 Digits):</string>
+    <string name="terminal_time_and_date">Terminal Date/Time:</string>
+    <string name="chinese_merchant_name">Merchant Chinese Name:</string>
+    <string name="english_merchant_name">Merchant English Name:</string>
+    <string name="acquirer_number">Acquirer(8 Digits):</string>
+
+    <!-- 系统设置的交易管理 -->
+    <string name="trade_manage_ctrl_switch">Transaction Switch Control</string>
+    <string name="trade_manage_ctrl_passwd">Transaction Password Control</string>
+    <string name="trade_manage_ctrl_swip_card">Transaction Swipe Card Control</string>
+    <string name="trade_manage_ctrl_settle">Transaction Settlement Control</string>
+    <string name="trade_manage_ctrl_offline">Transaction Offline Control</string>
+    <string name="trade_manage_ctrl_other">Other Transaction Control</string>
+    <string name="trade_manage_ctrl_quick_pass">Quick Pass Transaction Control</string>
+
+    <!-- 交易管理 ,交易开关控制 -->
+    <string name="tm_switch_menu_gerneral">General Transaction</string>
+    <string name="tm_switch_menu_electronic_cash">E-cash Transaction</string>
+    <string name="tm_switch_menu_scan_code">Scan Code Transaction</string>
+    <string name="tm_switch_home_trans_type">Home Transaction Type</string>
+
+    <!-- 交易管理 ,交易开关控制,传统类交易 -->
+    <string name="st_general_menu_sale">Sale</string>
+    <string name="st_general_menu_unsale">Sale Void</string>
+    <string name="st_general_menu_refund">Refund</string>
+    <string name="st_general_menu_query">Balance Query</string>
+    <string name="st_general_menu_preauth">Auth</string>
+    <string name="st_general_menu_unpreauth">Auth Void</string>
+    <string name="st_general_menu_preauth_complete">Auth Complete(Request)</string>
+    <string name="st_general_menu_preauth_offcomplete">Auth Complete(Advise)</string>
+    <string name="st_general_menu_preauth_uncomplete">Auth Complete Void</string>
+    <string name="st_general_menu_offsettle">Offline Settlement</string>
+    <string name="st_general_menu_settleadjust">Settlement Adjustment</string>
+
+    <!-- 交易管理 ,交易开关控制,电子现金类交易 -->
+    <string name="st_ec_menu_ecsale_contact">E-cash Sale</string>
+    <string name="st_ec_menu_qc_acc">E-cash Allocated Account Load</string>
+    <string name="st_ec_menu_qc_noacc">E-cash Unallocated Account Load</string>
+    <string name="st_ec_menu_cash">E-cash Charge</string>
+    <string name="st_ec_menu_uncash">E-cash Charge Void</string>
+    <string name="st_ec_menu_offrefund">E-cash Offline Refund</string>
+    <string name="st_ec_menu_query">E-cash Balance Query</string>
+    <!-- 交易管理 ,交易开关控制,扫码类交易 -->
+    <string name="st_scan_menu_sale">Scan Code Sale</string>
+    <string name="st_scan_menu_void">Scan Code Void</string>
+    <string name="st_scan_menu_refund">Scan Code Refund</string>
+
+    <!-- 交易管理 ,交易开关控制,主界面交易类型 -->
+    <string name="st_home_trans_type_choose">Please Choose Trans Type：</string>
+    <string-array name="st_home_trans_type_list_entries">
+        <item>Sale</item>
+        <item>Pre-Auth</item>
+    </string-array>
+    <string-array name="st_home_trans_type_list_entry_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- 交易管理 ,交易输密控制 -->
+    <string name="tm_passwd_menu_unsale">Sale Void Require Password</string>
+    <string name="tm_passwd_menu_unpreauth">Auth Void Require PWD</string>
+    <string name="tm_passwd_menu_preauth_uncomplete">Auth COMP Void Require PWD</string>
+    <string name="tm_passwd_menu_preauth_complete">Auth COMP Request Require PWD</string>
+
+    <!-- 交易管理 ,交易刷卡控制 -->
+    <string name="tm_brushcard_menu_unsale">Sale Void Swipe Card</string>
+    <string name="tm_brushcard_menu_preauth_uncomplete">Auth Complete Void Swipe Card</string>
+
+    <!-- 交易管理 ,结算交易控制 -->
+    <string name="tm_settle_menu_auto_logout">Auto Logout After Settlement</string>
+    <string name="tm_settle_menu_is_printdetail">Settlement Print Details</string>
+
+    <!-- 交易管理 ,离线交易控制 -->
+    <string name="tm_offtrade_menu_upload_times">Offline Upload Times(1&#8211;9)</string>
+    <string name="tm_offsale_menu_auto_upload_num">Auto Upload Number(1&#8211;90)</string>
+    <string name="tm_offsale_menu_offline_upload_type">Offline Upload Type</string>
+    <!-- <string name="tm_support_offsettle_smallmode">支持小额代付方式</string> -->
+
+
+    <!-- 交易管理 ,其他交易控制 -->
+
+    <string name="tm_other_menu_EMV_switch">Support EMV</string>
+    <string name="tm_other_oper_deter_EMV">Judge EMV Card Modes</string>
+    <!-- 交易管理 ,其他交易控制,判断EMV卡方式-->
+    <string name="st_oper_deter_EMV_choose">Please Choose Judgement Modes:</string>
+    <string-array name="st_oper_deter_EMV_list_entries">
+        <item>Operator Judgement</item>
+        <item>POS Judgement</item>
+    </string-array>
+    <string-array name="st_oper_deter_EMV_list_entry_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="tm_other_menu_ECR_switch">Support ECR</string>
+    <string name="tm_other_ECR_timeout">ECR Timeout(Unit:Second,Max:900S)</string>
+    <string name="tm_other_menu_support_exrate">Support Rate Exchange?</string>
+    <string name="tm_other_menu_force_online">Force Online?</string>
+    <string name="tm_other_menu_support_que">Support Balance Query?</string>
+    <!--<string name="tm_other_menu_force_SDA">Force SDA?</string>-->
+
+    <string name="tm_other_menu_track_encrypt">Track Encrypt</string>
+    <string name="tm_other_menu_void_trans">Void Require Supervisor PWD</string>
+    <string name="tm_other_menu_input_admin_password">Enter Supervisor Password</string>
+    <string name="tm_other_menu_manual_cardno">Allow Enter Card NO. Manually?</string>
+    <string name="tm_other_menu_signature">Support Signature?</string>
+    <string name="tm_other_menu_max_refund_amount">Maximum Refund Amount(Unit:Yuan,Max:1 million)</string>
+    <string name="whether_support_bill_amt">Support Balance Query?</string>
+    <string name="tm_quick_pass_switch">Quick Pass Trans Switch</string>
+    <string name="tm_quick_pass_cdcvm">CDCVM Identification</string>
+    <string name="tm_quick_pass_sign_pin_free_amount">PIN Free Limit Amount(Unit:Cent,Max:1 thousand Yuan)</string>
+
+
+
+    <!-- 系统设置的系统参数 -->
+    <string name="systempara_menu_voucher_no">Current Trans NO.:</string>
+    <string name="systempara_menu_batch_no">Current Batch NO.:</string>
+    <string name="systempara_menu_is_acquirer_bank">Acquirer Bank Print:</string>
+    <string name="systempara_menu_is_issuer_bank">Issuer Bank Print:</string>
+    <string name="systempara_menu_is_voucher_bank_english">Voucher Sheet Print English:</string>
+    <string name="systempara_menu_recv_timeout_correction">Receive Timeout Correction:</string>
+    <string name="systempara_menu_print_timers">Print Timers：</string>
+    <string name="systempara_menu_print_gray">Printer Gray(50&#8211;500)</string>
+    <string name="systempara_menu_resend_times">Resend Times(1&#8211;3)</string>
+    <string name="systempara_menu_signature_times">Signature Resend Times(1&#8211;3)</string>
+    <string name="systempara_menu_reversal_times">Reversal Resend Times(1&#8211;3)</string>
+    <string name="systempara_menu_max_trade_num">Max Trans Num(Less Than 500):</string>
+    <string name="systempara_menu_is_ex_pinpad">PIN PAD Choose</string>
+    <string name="systempara_menu_is_ex_no_touch">External No Touch Setup</string>
+    <string name="systempara_menu_is_ex_no_touch_choose">External No Touch Setup Choose:</string>
+    <string name="systempara_menu_is_ex_no_touch_serial_num">No Touch Device Serial Number:</string>
+    <string name="systempara_menu_is_ex_no_touch_baud_rate">External No Touch Baud Rate:</string>
+    <string name="systempara_menu_support_tip">Support Tip?</string>
+    <string name="systempara_menu_tips_rate">Tip Rate Setup(%)：</string>
+    <string name="systempara_menu_load_blacklist">Force Download Blacklist:</string>
+    <string name="systempara_menu_support_sm">Support SM:</string>
+    <string name="systempara_menu_support_sm_2">Support SM2</string>
+    <string name="systempara_menu_support_small_auth">Small Amount Auth</string>
+    <string name="voucher_batch_no_default_value">000001</string>
+    <string name="systempara_menu_support_external_scanner">External Scanner</string>
+    <string name="systempara_menu_signature_choose">Signature PAD Choose</string>
+    <string name="external_scanner_select">External Scanner Select</string>
+    <string name="internal_scanner_select">Internal Scanner Select</string>
+    <string name="systenmpara_menu_support_offline_trans">Support Offline Trans?</string>
+    <!-- Added by yangrr -->
+    <string name="systempara_menu_upload_offline_trans">Offline Upload</string>
+
+    <string name="systemPara_mask_card_number">Mask Card NO. Setup</string>
+    <string name="systemPara_sale_mask_card_number">Sale Mask Card NO.</string>
+    <string name="systemPara_preauth_mask_card_number">Auth Mask Card NO.</string>
+    <string name="systemPara_ecash_mask_card_number">E-cash Mask Card NO.</string>
+    <string name="systempara_dialog_title">Warning</string>
+    <string name="systempara_dialog_content">Transactions exit, please settle first!</string>
+    <string-array name="systempara_menu_upload_offline_trans_entries">
+        <item>Upload Next Time</item>
+        <item>Batch Upload</item>
+    </string-array>
+    <string-array name="systempara_menu_upload_offline_trans_entry_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="systempara_menu_ex_no_touch_list_entries">
+        <item>SP20</item>
+        <item>SP30</item>
+        <item>R50R30</item>
+    </string-array>
+    <string-array name="systempara_menu_ex_no_touch_serial_list_entries">
+        <item>RS232A</item>
+        <item>RS232B</item>
+        <item>PINPAD</item>
+    </string-array>
+    <string-array name="systempara_menu_ex_no_touch_baud_rate_list_entries">
+        <item>9600</item>
+        <item>19200</item>
+        <item>57600</item>
+        <item>115200</item>
+    </string-array>
+    <string-array name="systempara_menu_external_scanner_entries">
+        <item>S200</item>
+    </string-array>
+    <string-array name="systempara_menu_external_scanner_entry_values">
+        <item>1</item>
+    </string-array>
+    <string-array name="systempara_menu_internal_scanner_entries">
+        <item>FRONT</item>
+        <item>REAR</item>
+        <item>LEFT</item>
+        <item>RIGHT</item>
+    </string-array>
+    <string-array name="systempara_menu_internal_scanner_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="systempara_menu_signature_entries">
+        <item>Internal</item>
+        <item>S200</item>
+    </string-array>
+    <string-array name="systempara_menu_signature_entry_values">
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+
+    <!-- 通讯参数的modem -->
+    <string name="commpara_menu_modem_phone1">Phone1</string>
+    <string name="commpara_menu_modem_phone2">Phone2</string>
+    <string name="commpara_menu_modem_phone3">Phone3</string>
+    <string name="commpara_menu_modem_is_predial">Is PreDial?</string>
+    <string name="commpara_menu_modem_need_extra">Need Outline Configuration?</string>
+    <string name="commpara_menu_modem_outline">Outline Number(Not more Than 15 Digits)</string>
+    <string name="commpara_menu_modem_pabxdelay">Outline Delay(Unit: 1s)</string>
+    <string name="commpara_menu_modem_dtimes">Redial Times(1&#8211;9)</string>
+    <string name="commpara_menu_modem_dial_timeout">Communication Timeout(Unit:10s)</string>
+    <string name="commpara_menu_modem_dial_level">Dial Level(0&#8211;15)</string>
+    <string name="commpara_menu_modem_dial_dp">Dial Mode</string>
+    <string name="commpara_menu_modem_dial_check">Dial Check</string>
+    <string name="commpara_menu_modem_dial_dt1">Dial Longest Wait Time(Unit:100ms, Scope:20&#8211;255)</string>
+    <string name="commpara_menu_modem_dial_dt2">Outline Dial Wait Time(Unit:100ms,Scope:0&#8211;255)</string>
+    <string name="commpara_menu_modem_dial_ht">Single Number Keep Time(Unit:1ms,Scope:50&#8211;255)</string>
+    <string name="commpara_menu_modem_dial_wt">Two Numbers Interval Time(Unit:10ms,Scope:5&#8211;25)</string>
+    <string name="commpara_menu_modem_dial_ssetup">Communication Bytes Setup</string>
+    <string name="commpara_menu_modem_dial_asmode">Asynchronous Communication Pattern</string>
+
+    <!-- 系统设置的通讯参数 -->
+
+    <string name="commpara_menu_tpdu">TPDU</string>
+    <string name="commpara_menu_comm_mode_issuer">Communication Type</string>
+    <string name="commpara_menu_ssl_mode">SSL Type</string>
+    <string name="communication_menu_dial">MODEM</string>
+    <string name="communication_menu_mobile">Mobile Network</string>
+    <string name="communication_menu_ethernet">Ethernet</string>
+    <string name="communication_menu_wifi">WIFI</string>
+    <string name="tpdu_default_value">6000020000</string>
+    <string name="commpara_menu_comm_mode_choose">Please Choose Communication Type:</string>
+    <string name="commpara_menu_ssl_mode_choose">Please Choose SSL Type:</string>
+    <string name="keymanager_recv_port_choose">Please Choose Receive Port:</string>
+    <string name="commpara_menu_modem_dial_type">Please Choose Dial Mode：</string>
+    <string name="keymanager_recv_port">Receive Port</string>
+
+    <string-array name="commpara_menu_modem_dial_type_entries">
+        <item>DTMF</item>
+        <item>Pulse1</item>
+        <item>Pulse2</item>
+    </string-array>
+    <string-array name="commpara_menu_modem_dial_type_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="commpara_menu_comm_mode_list_entries">
+        <item>MODEM</item>
+        <item>Mobile Network</item>
+        <item>Ethernet</item>
+        <item>WIFI</item>
+    </string-array>
+    <string-array name="commpara_menu_comm_mode_list_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="commpara_menu_ssl_mode_list_entries">
+        <item>Disable SSL</item>
+        <item>CUP SSL</item>
+    </string-array>
+    <string-array name="commpara_menu_ssl_mode_list_entry_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="keymanage_recv_port_list_entries">
+        <!--
+        <item>COM1</item>
+        <item>PINPAD</item>
+        <item>USBDEV</item>
+
+
+
+
+        -->
+    </string-array>
+    <string-array name="keymanage_recv_port_value_list_entries">
+        <!--
+        <item>COM1</item>
+        <item>PINPAD</item>
+        <item>USBDEV</item>
+
+
+
+
+        -->
+    </string-array>
+    <!-- 通讯参数的modem -->
+    <!-- 通讯参数的移动网络 -->
+    <string name="commpara_menu_mobile_wifi_long_link">Keep Alive</string>
+    <string name="commpara_menu_mobile_dial_no">AP</string>
+    <string name="commpara_menu_mobile_apn">APN</string>
+    <string name="commpara_menu_mobile_ip1">Host IP Address:</string>
+    <string name="commpara_menu_mobile_port1">Host Port:</string>
+    <string name="commpara_menu_mobile_ip2">Spare Host IP Address</string>
+    <string name="commpara_menu_mobile_port2">Spare Host Port</string>
+    <string name="commpara_menu_mobile_need_user">Need User</string>
+    <string name="commpara_menu_mobile_user_name">User Name</string>
+    <string name="commpara_menu_mobile_user_password">User Password</string>
+    <!-- 通讯参数的以太网 -->
+    <string name="commpara_menu_net_server_ip1">Server IP:</string>
+    <string name="commpara_menu_net_server_port1">Server Port:</string>
+    <string name="commpara_menu_net_server_ip2">Spare Server IP:</string>
+    <string name="commpara_menu_net_server_port2">Spare Server Port:</string>
+    <string name="commpara_menu_net_is_dhcp">Is DHCP?</string>
+    <string name="commpara_menu_net_client_ip">Local IP:</string>
+    <string name="commpara_menu_net_mask">Subnet mask:</string>
+    <string name="commpara_menu_net_gateway">Gateway IP:</string>
+    <string name="commpara_menu_net_dns1">Please Input Primary DNS:</string>
+    <string name="commpara_menu_net_dns2">Please Input Secondary DNS:</string>
+    <!-- 通讯参数的wifi -->
+    <string-array name="wifi_status">
+        <item>"Scanning&#8230;"</item>
+        <item>"Connecting&#8230;"</item>
+        <item>"Authenticating&#8230;"</item>
+        <item>"Getting IP&#8230;"</item>
+        <item>"Connected"</item>
+        <item>"Paused"</item>
+        <item>"Disconnecting&#8230;"</item>
+        <item>"Disconnected"</item>
+        <item>"Failed"</item>
+    </string-array>
+
+    <string name="open_wifi">Open Wifi</string>
+    <string name="wifi_started">"Opened"</string>
+    <string name="wifi_starting">"Opening Wi-Fi&#8230;"</string>
+    <string name="wifi_stopping">"Stopping Wi-Fi&#8230;"</string>
+    <string name="wifi_empty_list_wifi_off">"To Check Available Networks, Please Open Wi-Fi."</string>
+    <string name="signal_level">Signal Level</string>
+    <string name="safety">Safety</string>
+    <string name="passwd">Password</string>
+    <string name="strong">Strong</string>
+    <string name="general">General</string>
+    <string name="weak">Weak</string>
+    <string name="connect">Connect</string>
+    <string name="connect_fail">Connect Fail</string>
+    <string name="wifi_fail_to_scan">"Fail To Scan"</string>
+    <string name="wifi_security_eap">802.1x EAP</string>
+    <string name="wifi_security_short_eap">802.1x</string>
+    <string name="wifi_security_short_wpa">WPA</string>
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <string name="wifi_security_short_wep">WEP</string>
+    <string name="wifi_security_wep">WEP</string>
+    <string name="wifi_security_none">None</string>
+    <string name="wifi_not_in_range">"Not In Range"</string>
+    <string name="wifi_disabled_generic">"Disabled"</string>
+    <string name="wifi_remembered">"Saved "</string>
+    <string name="wifi_secured_first_item">"Secured Network Is Available"</string>
+    <string name="wifi_secured_second_item">"Secured Network Is Available"</string>
+    <string name="wifi_wps_available_first_item">"Secured Network Is Available"</string>
+    <string name="wifi_wps_available_second_item">" (Secured Network Is Available)"</string>
+    <!-- 通讯参数的串口 -->
+
+    <string name="commpara_menu_other_comm_timeout">Communication Timeout</string>
+
+    <!-- 系统设置的终端密钥管理 -->
+    <string name="keymanage_menu_key_des_type_choose">Please Choose key Algorithm:</string>
+
+    <string-array name="keymanage_menu_key_des_type_list_entries">
+
+        <!-- <item>@string/keymanage_menu_des</item> -->
+        <item>@string/keymanage_menu_tdes</item>
+    </string-array>
+
+    <!-- ic导密钥输入终端主密钥的方式 -->
+    <string-array name="keymanage_menu_ic_down_mk_input_type">
+        <item>@string/keymanage_menu_input_mk_param</item>
+        <item>@string/keymanage_menu_cup_ic_down_mk</item>
+    </string-array>
+
+    <string name="keymanage_menu_input_mk_param">IC Card Import Master Key</string>
+    <string name="keymanage_menu_cup_ic_down_mk">Import Ciphertext Manually </string>
+
+    <!-- 系统设置的密码键盘选择 -->
+    <string name="keymanage_menu_pwd_pad_choose">Please Choose PIN PAD:</string>
+
+    <string-array name="keymanage_menu_pwd_pad_list_entries">
+        <item>Internal</item>
+        <item>SP20</item>
+        <item>S200</item>
+    </string-array>
+
+    <string name="keymanage_menu_internal_pad_ui_style">Internal PIN PAD UI Style</string>
+
+    <string-array name="keymanage_menu_internal_pad_list_entries">
+        <item>Default</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="keymanage_menu_internal_pad_list_entry_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="keymanage_menu_tdes">3des</string>
+    <string name="keymanage_menu_master_pos_import_port">Master Key Import Port</string>
+    <string name="keymanage_menu_master_pos_import">母POS导入</string>
+    <string name="keymanage_menu_tmk_index">设置主密钥值索引(0-49)</string>
+    <string name="keymanage_menu_des_type">DES Algorithm</string>
+    <string name="keymanage_menu_key_value">Input master key manually</string>
+    <string name="keymanage_menu_tmskey_value">手工设置TMS主控密钥值</string>
+    <string name="keymanage_menu_tmk_index_no">Master key index(0-49)</string>
+    <string name="keymanage_menu_tms_index_no">TMS主控密钥索引号(1-100):</string>
+    <string name="keymanage_menu_tmk_value">Please Input Master Key</string>
+    <string name="keymanage_menu_tmk_index_err">Please Input Master Key Index</string>
+    <string name="keymanage_menu_tms_value">Please Input TMS Master Key</string>
+    <string name="keymanage_menu_gdun_keycard">GDUN IC Card Import Key</string>
+    <string name="keymanage_menu_keycard">IC卡导入密钥</string>
+    <!-- 系统设置的密码管理 -->
+
+    <string name="passwdmanage_system">Administrator Password</string>
+    <string name="passwdmanage_safe">Security Password</string>
+    <string name="input_old_password">Please Input Old Password</string>
+    <string name="input_new_password">Please Input New Password</string>
+    <string name="input_again_new_password">Confirm New Password</string>
+    <string name="error_input_length">Length Error</string>
+    <string name="error_old_password">Old Password Error</string>
+    <string name="error_password_no_same">Password Not Match\nPlease Input Again</string>
+    <string name="password_modify_success">Modify Password Success</string>
+
+    <!-- 货币管理 -->
+    <string name="currency_sys">Using a predefined currency</string>
+    <string name="currency_custom">Using a custom currency</string>
+    <string name="choose_currency">Choose Currency</string>
+    <string name="currency_name">Currency Name</string>
+    <string name="currency_code">Currency Code</string>
+    <string name="currency_decimals">Decimals(0-3)</string>
+    <string name="currency_decimals_hint">0-3</string>
+    <string name="currency_default_name">RMB</string>
+    <string name="currency_default_code">156</string>
+    <string name="currency_default_decimals">2</string>
+    <string name="currency_change_indication">Please settle first to change currency</string>
+
+    <!-- 系统设置的其他管理 -->
+    <string name="othermanage_menu_set_clear_func">Clear Function Set</string>
+    <string name="othermanage_menu_set_vouchersheet_print">Voucher Sheet Print Set</string>
+    <string name="othermanage_menu_set_download">Function</string>
+    <string name="othermanage_menu_set_para_print">Print Parameters</string>
+    <string name="othermanage_menu_print_debug">Print Debug</string>
+    <!-- 其他管理,清除交易流水 -->
+
+    <string name="om_cleartrade_menu_reserval">Clear Reversal</string>
+    <string name="om_cleartrade_menu_trade_voucher">Clear Trade Voucher</string>
+    <string name="om_cleartrade_menu_deal_require">Clear Deal Require</string>
+    <string name="om_cleartrade_menu_script">Clear Script Notify</string>
+    <string name="om_cleartrade_menu_black_list">Clear Black List</string>
+    <string name="om_cleartrade_menu_pos_space">POS Available Space</string>
+    <!-- 其他管理,签购单打印 -->
+    <!-- 其他管理,签购单抬头选择 -->
+
+    <string name="om_vouchersheet_menu_title_key">Voucher Sheet Title Chinese</string>
+    <string name="om_vouchersheet_menu_title_input">Tittle Input Set</string>
+
+    <!-- 其他管理,下载功能 -->
+
+    <string name="om_download_menu_echo_test">Echo</string>
+    <string name="om_download_menu_parameter_download">Parameter Download</string>
+    <string name="om_download_menu_download_product_and_data">Download Products &amp; Data</string>
+
+    <string name="om_download_menu_parameter_pass">Parameter Transmission</string>
+    <string name="om_upload_menu_terminal_status">Status Submission</string>
+    <string name="om_download_menu_iccard_public_key">IC PUK Download</string>
+    <string name="om_download_menu_iccard_parameter">IC Parameter Download</string>
+    <string name="om_download_menu_picc_parameter">PICC Parameter Download</string>
+    <string name="om_download_menu_binb">BinB Download</string>
+    <string name="om_download_menu_binc">BinC Download</string>
+    <string name="om_query_menu_applist">"Query App List"</string>
+    <string name="manage_menu_deal_inquiry">Transaction Inquiry</string>
+    <string name="qps">QPS</string>
+
+    <!-- 刷卡提示 -->
+    <string name="card_no">Card NO.:</string>
+
+    <!--  -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="outside">Outside</string>
+    <string name="inside">Inside</string>
+    <string name="input_len_err">Input Length Error</string>
+    <string name="input_err">Input Error</string>
+    <string name="transtype_print">Print</string>
+
+</resources>

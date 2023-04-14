@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <response code="00" category="A" message="Success"/>
+    <response code="01" category="C" message="Please Let Cardholder Contact With Issuer"/>
+    <response code="03" category="C" message="Invalid Merchant"/>
+    <response code="04" category="D" message="The Card Is Confiscated(POS)"/>
+    <response code="05" category="C" message="Cardholder Authentication Fail"/>
+    <response code="10" category="A" message="Display Partial Approved Amount,Prompt Operator"/>
+    <response code="11" category="A" message="Success, VIP Customer"/>
+    <response code="12" category="C" message="Invalid Transaction"/>
+    <response code="13" category="B" message="Invalid Amount"/>
+    <response code="14" category="B" message="Invalid Account"/>
+    <response code="15" category="C" message="The Card Has No Corresponding Card Issuers"/>
+    <response code="21" category="C" message="The Card Is Not Initialized or Sleeping Card"/>
+    <response code="22" category="C" message="Operate Error, Or Beyond the Number of Days the Transaction Allowed"/>
+    <response code="25" category="C" message="No Original Trade, Please Contact Issuer"/>
+    <response code="30" category="C" message="Please Retry"/>
+    <response code="34" category="D" message="Cheating Card, Retain Card"/>
+    <response code="38" category="D" message="Password Error Times Exceed, Please Contact Issuer"/>
+    <response code="40" category="C" message="Transaction Type is Not Supported by Issuer"/>
+    <response code="41" category="D" message="Report Loss Card,Please Confiscate(POS)"/>
+    <response code="43" category="D" message="Stolen Card, Please Confiscate"/>
+    <response code="45" category="C" message="Please Use Chip Card"/>
+    <response code="51" category="C" message="Available Balance Is Insufficient"/>
+<!--    <response code="54" category="C" message="The Card Is Out Of Date"/>-->
+    <response code="54" category="C" message="Already Paid"/>
+    <response code="55" category="C" message="Password Error"/>
+    <response code="57" category="C" message="Do Not Allow Transaction by the Card"/>
+    <response code="58" category="C" message="Issuer Do Not Allow The Card To Make This Deal In The POS"/>
+    <response code="59" category="C" message="Card Authoriztion Error"/>
+    <response code="61" category="C" message="Transaction Amount Exceed"/>
+    <response code="62" category="C" message="Restricted Card"/>
+    <response code="64" category="C" message="Transaction Amount Can Not Match With Original"/>
+    <response code="65" category="C" message="Number Of Withdrawals Exceed Allowed"/>
+    <response code="68" category="C" message="Transaction Timeout, Please Retry"/>
+    <response code="75" category="C" message="Password Error Times Exceed"/>
+    <response code="76" category="C" message="Unusable Account"/>
+    <response code="90" category="C" message="System Daily Cut, Please Retry Later"/>
+    <response code="91" category="C" message="Issuer Status Abnormal, Please Retry Later"/>
+    <response code="92" category="C" message="Issuer Line Abnormal, Please Retry Later"/>
+    <response code="94" category="C" message="Reject, Repeated Transaction, Please Retry Later"/>
+    <response code="96" category="C" message="Reject, Exchange Center Abnormal, Please Retry Later"/>
+    <response code="97" category="D" message="Treminal Number Not Registered"/>
+    <response code="98" category="E" message="Issuer Timeout"/>
+    <response code="99" category="B" message="PIN Format Error, Please Logon Again"/>
+    <response code="A0" category="B" message="MAC Authorization Error, Please Logon Again"/>
+    <response code="A1" category="C" message="Transfer Currency Inconsistent"/>
+    <response code="A2" category="A" message="Transaction Success, Please Confirm To Inter-Bank"/>
+    <response code="A3" category="C" message="Capital Account Number Incorrect"/>
+    <response code="A4" category="A" message="Transaction Success, Please Confirm To Inter-Bank"/>
+    <response code="A5" category="A" message="Transaction Success, Please Confirm To Inter-Bank"/>
+    <response code="A6" category="A" message="Transaction Success, Please Confirm To Inter-Bank"/>
+    <response code="A7" category="C" message="Security Process Failed"/>
+    <response code="46" category="C" message="Coupon is already used."/>
+    <response code="M1" category="C" message="Coupon is already used."/>
+    <response code="56" category="C" message="Coupon does not exist."/>
+    <response code="M2" category="C" message="Coupon does not exist."/>
+    <response code="81" category="C" message="Coupon does not conform the rule of usage."/>
+    <response code="M3" category="C" message="Coupon does not conform the rule of usage."/>
+    <response code="82" category="C" message="Promotion is end."/>
+    <response code="M4" category="C" message="Promotion is end."/>
+    <response code="83" category="C" message="Coupon is expired."/>
+    <response code="M5" category="C" message="Coupon is expired."/>
+</Response>

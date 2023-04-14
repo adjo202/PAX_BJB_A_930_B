@@ -1,0 +1,93 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_menu_merchant_parameter" >
+
+    <com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/merchant_number"
+        android:key="@string/pref_merch_id"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/merchant_number"
+        myview:ems="15"
+        myview:inputType="text"
+        myview:maxLength="15"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+    <com.pax.settings.SettingsEditTextPreference
+
+        android:capitalize="words"
+        android:dialogTitle="@string/terminal_number"
+        android:key="@string/pref_terminal_id"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/terminal_number"
+        myview:ems="8"
+        myview:maxLength="8"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+
+    <!--    disable request dari indopay doc. UAT 30062021-->
+    <!--<com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/acquirer_number"
+        android:key="@string/pref_acquirer"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/acquirer_number"
+        myview:ems="8"
+        myview:maxLength="8"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />-->
+
+    <!--<com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/chinese_merchant_name"
+        android:key="@string/pref_merch_cn"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/chinese_merchant_name"
+        myview:ems="8"
+        myview:maxLength="20"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />-->
+    <com.pax.settings.SettingsEditTextPreference
+        android:enabled="false"
+        android:capitalize="words"
+        android:dialogTitle="@string/english_merchant_name"
+        android:key="@string/pref_merch_en"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/english_merchant_name"
+        myview:ems="20"
+        myview:maxLength="20"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+    <!--    disable request dari indopay doc. UAT 30062021-->
+    <!--<com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/terminal_time_and_date"
+        android:key="@string/pref_terminal_time_date"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/terminal_time_and_date"
+        myview:ems="12"
+        myview:hint="YYMMDDHHMMSS"
+        myview:inputType="text"
+        myview:maxLength="12"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />-->
+
+</PreferenceScreen>

@@ -1,0 +1,320 @@
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res/com.pax.up.bjb"
+    tools:ignore="ResAuto">
+
+    <!-- 打开一个subscreen 交易开关控制 -->
+    <PreferenceCategory
+        android:key="trade_switch_category_key"
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/trade_manage_ctrl_switch" >
+
+        <!-- 传统类交易 -->
+        <PreferenceScreen
+            android:fragment="com.pax.settings.SettingsMenuGeneral"
+            android:key="tm_switch_menu_gerneral"
+            android:layout="@layout/prefs_list_et_item"
+            android:title="@string/tm_switch_menu_gerneral" />
+        <!-- 电子现金类交易 -->
+        <PreferenceScreen
+            android:fragment="com.pax.settings.SettingsMenuElectronicCash"
+            android:key="tm_switch_menu_electronic_cash"
+            android:layout="@layout/prefs_list_et_item"
+            android:title="@string/tm_switch_menu_electronic_cash" />
+        <!-- 扫码类交易 -->
+        <PreferenceScreen
+            android:fragment="com.pax.settings.SettingsMenuScanCode"
+            android:key="tm_switch_menu_scan_code"
+            android:layout="@layout/prefs_list_et_item"
+            android:title="@string/tm_switch_menu_scan_code" />
+        <!-- 主界面交易类型 -->
+        <com.pax.settings.SettingsSingleChoicePreference
+            android:defaultValue="1"
+            android:dialogTitle="@string/st_home_trans_type_choose"
+            android:key="@string/pref_home_trans"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/tm_switch_home_trans_type"
+            myview:entries="@array/st_home_trans_type_list_entries"
+            myview:entryValues="@array/st_home_trans_type_list_entry_values" />
+    </PreferenceCategory>
+
+    <!-- 打开一个subscreen 交易输密控制 -->
+    <PreferenceCategory
+        android:key="trade_password_switch_category_key"
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/trade_manage_ctrl_passwd" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_sale_void_pwd"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_passwd_menu_unsale"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_preauth_void_pwd"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_passwd_menu_unpreauth"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_preauth_cmp_void_pwd"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_passwd_menu_preauth_uncomplete"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_preauth_cmp_pwd"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_passwd_menu_preauth_complete"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+    </PreferenceCategory>
+
+    <!-- 打开一个subscreen 交易刷卡控制 -->
+    <PreferenceCategory
+        android:key="trade_brushcard_category_key"
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/trade_manage_ctrl_swip_card" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_sale_void_swipe_card"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_brushcard_menu_unsale"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_pac_void_swipe_card"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_brushcard_menu_preauth_uncomplete"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+    </PreferenceCategory>
+
+    <!-- 打开一个subscreen 结算 交易控制 -->
+    <PreferenceCategory
+        android:key="trade_settle_category_key"
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/trade_manage_ctrl_settle" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_settle_auto_logout"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_settle_menu_auto_logout"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_settle_print_detail"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_settle_menu_is_printdetail"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+    </PreferenceCategory>
+
+    <!-- 打开一个subscreen 离线交易控制 -->
+    <PreferenceCategory
+        android:key="trade_offline_category_key"
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/trade_manage_ctrl_offline" >
+        <com.pax.settings.SettingsSingleChoicePreference
+            android:defaultValue="1"
+            android:dialogTitle="@string/systempara_menu_upload_offline_trans"
+            android:key="@string/pref_offline_upload_type"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/systempara_menu_upload_offline_trans"
+            myview:entries="@array/systempara_menu_upload_offline_trans_entries"
+            myview:entryValues="@array/systempara_menu_upload_offline_trans_entry_values" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/tm_offtrade_menu_upload_times"
+            android:key="@string/pref_offline_upload_times"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/tm_offtrade_menu_upload_times"
+            myview:defaultValue="3"
+            myview:digits="1234567890"
+            myview:ems="1"
+            myview:inputType="number"
+            myview:maxLength="1"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/tm_offsale_menu_auto_upload_num"
+            android:key="@string/pref_offline_auto_upload_num"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/tm_offsale_menu_auto_upload_num"
+            myview:defaultValue="10"
+            myview:digits="1234567890"
+            myview:ems="2"
+            myview:inputType="number"
+            myview:maxLength="2"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+    </PreferenceCategory>
+
+    <!-- 打开一个subscreen 其他交易控制 -->
+    <PreferenceCategory
+        android:key="trade_other_category_key"
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/trade_manage_ctrl_other" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_supp_emv"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_other_menu_EMV_switch"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+            <com.pax.settings.SettingsSingleChoicePreference
+                android:defaultValue="1"
+                android:dependency="@string/pref_supp_emv"
+                android:dialogTitle="@string/st_oper_deter_EMV_choose"
+                android:key="@string/pref_judge_emv_mode"
+                android:layout="@layout/prefs_list_et_item"
+                android:negativeButtonText="@null"
+                android:positiveButtonText="@null"
+                android:title="@string/tm_other_oper_deter_EMV"
+                myview:entries="@array/st_oper_deter_EMV_list_entries"
+                myview:entryValues="@array/st_oper_deter_EMV_list_entry_values" />
+        <!--
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_supp_ecr"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_other_menu_ECR_switch"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+            <com.pax.settings.SettingsEditTextPreference
+                android:capitalize="words"
+                android:dependency="@string/pref_supp_ecr"
+                android:dialogTitle="@string/tm_other_ECR_timeout"
+                android:key="@string/pref_ecr_timeout"
+                android:layout="@layout/prefs_list_et_item"
+                android:negativeButtonText="@string/dialog_cancel"
+                android:positiveButtonText="@string/dialog_ok"
+                android:title="@string/tm_other_ECR_timeout"
+                myview:defaultValue="90"
+                myview:digits="1234567890"
+                myview:ems="4"
+                myview:inputType="number"
+                myview:maxLength="4"
+                myview:maxLines="1"
+                myview:selectAllOnFocus="true"
+                myview:singLine="true" />
+                -->
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_supp_rate_exch"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_other_menu_support_exrate"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+    <!--
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_force_sda"
+        android:layout="@layout/prefs_list_s_item"
+        android:title="@string/tm_other_menu_force_SDA"
+        android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+    -->
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_mas_opr_veirfy_void_refund"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_other_menu_void_trans"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_track_encrypt"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_other_menu_track_encrypt"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_allow_manual_card_no"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_other_menu_manual_cardno"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_supp_signature"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_other_menu_signature"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/tm_other_menu_max_refund_amount"
+            android:key="@string/pref_refund_limit_amount"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/tm_other_menu_max_refund_amount"
+            myview:defaultValue="1000000"
+            myview:digits="1234567890"
+            myview:ems="7"
+            myview:inputType="number"
+            myview:maxLength="7"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+    </PreferenceCategory>
+
+    <!-- 免签免密交易控制 -->
+    <PreferenceCategory
+        android:key="quick_pass_category_key"
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/trade_manage_ctrl_quick_pass" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_quick_pass_switch"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_quick_pass_switch"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+        <!-- The visual style of a child is defined by this styled theme attribute. -->
+        <!-- 子控件关联父控件，在父控件选中后子控件才可用 -->
+        <!-- android:layout="?android:attr/preferenceLayoutChild" -->
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="@string/pref_quick_pass_switch"
+            android:key="@string/pref_quick_pass_cdcvm_flag"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_quick_pass_cdcvm"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="@string/pref_quick_pass_switch"
+            android:key="@string/pref_force_online"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/tm_other_menu_force_online"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dependency="@string/pref_quick_pass_switch"
+            android:dialogTitle="@string/tm_quick_pass_sign_pin_free_amount"
+            android:key="@string/pref_quick_pass_sign_pin_free_limit"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/tm_quick_pass_sign_pin_free_amount"
+            myview:defaultValue="300.00"
+            myview:digits="1234567890"
+            myview:ems="7"
+            myview:inputType="number"
+            myview:maxLength="7"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

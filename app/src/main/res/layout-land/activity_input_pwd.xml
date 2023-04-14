@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/alert_width"
+    android:layout_height="@dimen/alert_height"
+    android:background="@drawable/dialog_employee_all"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/header_layout"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/trans_amount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="@string/trans_amount"
+            android:textColor="@color/prompt_no_pwd_color"
+            android:textSize="@dimen/font_size_normal_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="bottom"
+            android:text="￥"
+            android:textColor="@color/trans_amount_color"
+            android:textSize="@dimen/font_size_small" />
+
+        <TextView
+            android:id="@+id/amount_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="@string/amount_default"
+            android:textColor="@color/trans_amount_color"
+            android:textSize="@dimen/font_size_larger" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/prompt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_employee_title"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/prompt_bankcard_pwd"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_size_normal" />
+
+    <TextView
+        android:id="@+id/pwd_input_text"
+        android:layout_width="330dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_frame"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_size_larger" />
+
+    <ImageView
+        android:id="@+id/prompt_ex_pinpad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ex_pinpad"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/prompt_no_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/prompt_no_password"
+        android:textColor="@color/prompt_no_pwd_color"
+        android:textSize="@dimen/font_size_small" />
+
+</LinearLayout>

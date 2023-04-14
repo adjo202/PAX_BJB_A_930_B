@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="20dip" >
+
+    
+
+    <com.pax.view.CustomEditText
+        android:id="@+id/edit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_frame"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_size_large" >
+    </com.pax.view.CustomEditText>
+
+</RelativeLayout>

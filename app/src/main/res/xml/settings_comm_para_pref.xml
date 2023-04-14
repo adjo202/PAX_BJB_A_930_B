@@ -1,0 +1,642 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res/com.pax.up.bjb" >
+
+    <com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/commpara_menu_tpdu"
+        android:key="@string/pref_tpdu"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/commpara_menu_tpdu"
+        myview:defaultValue="@string/tpdu_default_value"
+        myview:digits="1234567890"
+        myview:ems="10"
+        myview:inputType="number"
+        myview:maxLength="10"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+
+    <com.pax.settings.SettingsSingleChoicePreference
+        android:defaultValue="4"
+        android:dialogTitle="@string/commpara_menu_comm_mode_choose"
+        android:key="@string/pref_acquirer_comm_type"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/commpara_menu_comm_mode_issuer"
+        myview:entries="@array/commpara_menu_comm_mode_list_entries"
+        myview:entryValues="@array/commpara_menu_comm_mode_list_entry_values" />
+
+
+    <com.pax.settings.SettingsSingleChoicePreference
+        android:defaultValue="1"
+        android:dialogTitle="@string/commpara_menu_ssl_mode_choose"
+        android:key="@string/pref_acquirer_ssl_type"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/commpara_menu_ssl_mode"
+        myview:entries="@array/commpara_menu_ssl_mode_list_entries"
+        myview:entryValues="@array/commpara_menu_ssl_mode_list_entry_values" />
+
+    <com.pax.settings.SettingsEditTextPreference
+        android:capitalize="words"
+        android:dialogTitle="@string/commpara_menu_other_comm_timeout"
+        android:key="@string/pref_comm_timeout"
+        android:layout="@layout/prefs_list_et_item"
+        android:negativeButtonText="@string/dialog_cancel"
+        android:positiveButtonText="@string/dialog_ok"
+        android:title="@string/commpara_menu_other_comm_timeout"
+        myview:defaultValue="60"
+        myview:digits="1234567890"
+        myview:ems="2"
+        myview:inputType="number"
+        myview:maxLength="2"
+        myview:maxLines="1"
+        myview:selectAllOnFocus="true"
+        myview:singLine="true" />
+
+    <!-- 拨号 -->
+    <PreferenceCategory
+        android:key="modem_category_key"
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/communication_menu_dial" >
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:key="@string/pref_modem_telno_1"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_phone1"
+            myview:defaultValue="4008200358"
+            myview:digits="1234567890"
+            myview:ems="20"
+            myview:inputType="number"
+            myview:maxLength="20"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:key="@string/pref_modem_telno_2"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_phone2"
+            myview:defaultValue="1000"
+            myview:digits="1234567890"
+            myview:ems="20"
+            myview:inputType="number"
+            myview:maxLength="20"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:key="@string/pref_modem_telno_3"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_phone3"
+            myview:defaultValue="1000"
+            myview:digits="1234567890"
+            myview:ems="20"
+            myview:inputType="number"
+            myview:maxLength="20"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_modem_need_ext_line"
+            android:layout="@layout/prefs_list_s_item"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/commpara_menu_modem_need_extra"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dependency="@string/pref_modem_need_ext_line"
+            android:key="@string/pref_modem_ext_line_no"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_outline"
+            myview:defaultValue="0"
+            myview:digits="1234567890,"
+            myview:ems="15"
+            myview:inputType="text"
+            myview:maxLength="15"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dependency="@string/pref_modem_need_ext_line"
+            android:key="@string/pref_modem_ext_line_delay"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_pabxdelay"
+            myview:defaultValue="2"
+            myview:digits="1234567890"
+            myview:ems="2"
+            myview:inputType="number"
+            myview:maxLength="2"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_modem_pre_dail"
+            android:layout="@layout/prefs_list_s_item"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/commpara_menu_modem_is_predial"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:key="@string/pref_modem_redail_times"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_dtimes"
+            myview:defaultValue="3"
+            myview:digits="1234567890"
+            myview:ems="2"
+            myview:inputType="number"
+            myview:maxLength="2"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:key="@string/pref_modem_timeout"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_dial_timeout"
+            myview:defaultValue="2"
+            myview:digits="1234567890"
+            myview:ems="2"
+            myview:inputType="number"
+            myview:maxLength="2"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:key="@string/pref_modem_dial_level"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_dial_level"
+            myview:defaultValue="1"
+            myview:digits="1234567890"
+            myview:ems="2"
+            myview:inputType="number"
+            myview:maxLength="2"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+
+        <com.pax.settings.SettingsSingleChoicePreference
+            android:defaultValue="1"
+            android:dialogTitle="@string/commpara_menu_modem_dial_type"
+            android:key="@string/pref_modem_dial_mode"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/commpara_menu_modem_dial_dp"
+            myview:entries="@array/commpara_menu_modem_dial_type_entries"
+            myview:entryValues="@array/commpara_menu_modem_dial_type_entry_values" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_modem_check_dial"
+            android:layout="@layout/prefs_list_s_item"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/commpara_menu_modem_dial_check"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:key="@string/pref_modem_dial_wait_time"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_dial_dt1"
+            myview:defaultValue="40"
+            myview:digits="1234567890"
+            myview:ems="3"
+            myview:inputType="number"
+            myview:maxLength="3"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:key="@string/pref_modem_outline_dial_wiat_time"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_dial_dt2"
+            myview:defaultValue="10"
+            myview:digits="1234567890"
+            myview:ems="3"
+            myview:inputType="number"
+            myview:maxLength="3"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:key="@string/pref_modem_single_no_keep_time"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_dial_ht"
+            myview:defaultValue="100"
+            myview:digits="1234567890"
+            myview:ems="3"
+            myview:inputType="number"
+            myview:maxLength="3"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:key="@string/pref_modem_two_no_interval"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_dial_wt"
+            myview:defaultValue="10"
+            myview:digits="1234567890"
+            myview:ems="2"
+            myview:inputType="number"
+            myview:maxLength="2"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:key="@string/pref_modem_byte"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_dial_ssetup"
+            myview:defaultValue="4"
+            myview:digits="1234567890"
+            myview:ems="2"
+            myview:inputType="number"
+            myview:maxLength="2"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:key="@string/pref_modem_async_type"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_modem_dial_asmode"
+            myview:defaultValue="1"
+            myview:digits="1234567890"
+            myview:ems="2"
+            myview:inputType="number"
+            myview:maxLength="2"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+    </PreferenceCategory>
+
+    <!-- 移动网络 -->
+    <PreferenceCategory
+        android:key="mobile_category_key"
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/communication_menu_mobile" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_mobile_long_link"
+            android:layout="@layout/prefs_list_s_item"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/commpara_menu_mobile_wifi_long_link"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/commpara_menu_mobile_dial_no"
+            android:key="@string/pref_mobile_access_no"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_mobile_dial_no"
+            myview:defaultValue=""
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/commpara_menu_mobile_apn"
+            android:key="@string/pref_mobile_apn"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_mobile_apn"
+            myview:defaultValue="CMNET"
+            myview:ems="50"
+            myview:maxLength="50"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/commpara_menu_mobile_ip1"
+            android:key="@string/pref_mobile_host_ip"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_mobile_ip1"
+            myview:defaultValue="219.133.170.86"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/commpara_menu_mobile_port1"
+            android:key="@string/pref_mobile_host_port"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_mobile_port1"
+            myview:defaultValue="8496"
+            myview:digits="1234567890"
+            myview:ems="5"
+            myview:inputType="number"
+            myview:maxLength="5"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/commpara_menu_mobile_ip2"
+            android:key="@string/pref_mobile_back_host_ip"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_mobile_ip2"
+            myview:defaultValue="219.133.170.86"
+            myview:digits="1234567890."
+            myview:ems="15"
+            myview:inputType="number"
+            myview:maxLength="15"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/commpara_menu_mobile_port2"
+            android:key="@string/pref_mobile_back_host_port"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_mobile_port2"
+            myview:defaultValue="8496"
+            myview:digits="1234567890"
+            myview:ems="5"
+            myview:inputType="number"
+            myview:maxLength="5"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_mobile_need_user"
+            android:layout="@layout/prefs_list_s_item"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/commpara_menu_mobile_need_user"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dependency="@string/pref_mobile_need_user"
+            android:dialogTitle="@string/commpara_menu_mobile_user_name"
+            android:key="@string/pref_mobile_user_name"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_mobile_user_name"
+            myview:defaultValue="cmnet"
+            myview:ems="50"
+            myview:maxLength="50"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dependency="@string/pref_mobile_need_user"
+            android:dialogTitle="@string/commpara_menu_mobile_user_password"
+            android:key="@string/pref_mobile_pwd"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_mobile_user_password"
+            myview:defaultValue=""
+            myview:ems="50"
+            myview:maxLength="50"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+    </PreferenceCategory>
+    <!-- 以太网 -->
+    <PreferenceCategory
+        android:key="ethernet_category_key"
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/communication_menu_ethernet" >
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/commpara_menu_net_server_ip1"
+            android:key="@string/pref_lan_host_ip"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_net_server_ip1"
+            myview:defaultValue="172.23.1.24"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/commpara_menu_net_server_port1"
+            android:key="@string/pref_lan_host_port"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_net_server_port1"
+            myview:defaultValue="8000"
+            myview:digits="1234567890"
+            myview:ems="5"
+            myview:inputType="number"
+            myview:maxLength="5"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:disableDependentsState="true"
+            android:key="@string/pref_lan_dhcp"
+            android:layout="@layout/prefs_list_s_item"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/commpara_menu_net_is_dhcp"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dependency="@string/pref_lan_dhcp"
+            android:dialogTitle="@string/commpara_menu_net_client_ip"
+            android:key="@string/pref_lan_local_ip"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_net_client_ip"
+            myview:defaultValue="172.23.1.233"
+            myview:digits="1234567890."
+            myview:ems="15"
+            myview:inputType="number"
+            myview:maxLength="15"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dependency="@string/pref_lan_dhcp"
+            android:dialogTitle="@string/commpara_menu_net_mask"
+            android:key="@string/pref_lan_subnet_mask"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_net_mask"
+            myview:defaultValue="255.255.0.0"
+            myview:digits="1234567890."
+            myview:ems="15"
+            myview:inputType="number"
+            myview:maxLength="15"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dependency="@string/pref_lan_dhcp"
+            android:dialogTitle="@string/commpara_menu_net_gateway"
+            android:key="@string/pref_lan_gateway"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_net_gateway"
+            myview:defaultValue="172.23.0.254"
+            myview:digits="1234567890."
+            myview:ems="15"
+            myview:inputType="number"
+            myview:maxLength="15"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/commpara_menu_net_server_ip2"
+            android:key="@string/pref_lan_back_host_ip"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_net_server_ip2"
+            myview:defaultValue="172.18.0.206"
+            myview:digits="1234567890."
+            myview:ems="15"
+            myview:inputType="number"
+            myview:maxLength="15"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/commpara_menu_net_server_port2"
+            android:key="@string/pref_lan_back_host_port"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_net_server_port2"
+            myview:defaultValue="8000"
+            myview:digits="1234567890"
+            myview:ems="5"
+            myview:inputType="number"
+            myview:maxLength="5"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/commpara_menu_net_dns1"
+            android:key="@string/pref_lan_dns1"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_net_dns1"
+            myview:defaultValue="172.18.0.1"
+            myview:digits="1234567890."
+            myview:ems="15"
+            myview:inputType="number"
+            myview:maxLength="15"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+        <com.pax.settings.SettingsEditTextPreference
+            android:capitalize="words"
+            android:dialogTitle="@string/commpara_menu_net_dns2"
+            android:key="@string/pref_lan_dns2"
+            android:layout="@layout/prefs_list_et_item"
+            android:negativeButtonText="@string/dialog_cancel"
+            android:positiveButtonText="@string/dialog_ok"
+            android:title="@string/commpara_menu_net_dns2"
+            myview:defaultValue="172.18.0.3"
+            myview:digits="1234567890."
+            myview:ems="15"
+            myview:inputType="number"
+            myview:maxLength="15"
+            myview:maxLines="1"
+            myview:selectAllOnFocus="true"
+            myview:singLine="true" />
+    </PreferenceCategory>
+
+    <!-- WIFI -->
+    <!-- android:key="打开wifi"-->
+    <!-- There is a mistake at the value of the "key" below (Modified by Steven 2017-4-11 11:42:15)-->
+    <PreferenceCategory
+        android:key="wifi_category_key"
+        android:layout="@layout/prefs_category_widget"
+        android:persistent="false"
+        android:title="@string/communication_menu_wifi" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_open_wifi"
+            android:layout="@layout/prefs_list_s_item"
+            android:title="@string/open_wifi"
+            android:widgetLayout="@layout/settings_checkbox_prefs_widget" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

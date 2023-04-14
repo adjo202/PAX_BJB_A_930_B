@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <!--trans type-->
+        <TextView
+            android:id="@+id/trans_type_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textSize="@dimen/font_size_small"
+            android:text="@string/trans_type" />
+        <!-- Amount -->
+        <TextView
+            android:id="@+id/trans_amount_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_smaller"
+            android:text="@string/trans_amount" />
+        <!-- Card NO. -->
+        <TextView
+            android:id="@+id/card_no_or_pay_code_tv"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="@dimen/font_size_smaller"
+            android:text="@string/trans_card_no_or_pay_code" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <!-- Trans NO. -->
+        <TextView
+            android:id="@+id/trans_no_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textSize="@dimen/font_size_smaller"
+            android:text="@string/detail_trans_no" />
+        <!-- Auth Code-->
+        <TextView
+            android:id="@+id/auth_code_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_smaller"
+            android:text="@string/detail_auth_code" />
+        <!-- Date/Time -->
+        <TextView
+            android:id="@+id/trans_date_tv"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="end"
+            android:textSize="@dimen/font_size_smaller"
+            android:text="@string/date_and_time" />
+    </LinearLayout>
+
+</LinearLayout>
